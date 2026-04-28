@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fondos */
+  --bg-primary:    #080808;
+  --bg-secondary:  #0f0f0f;
+  --bg-elevated:   #181818;
+  --bg-highlight:  #242424;
+
+  /* Acento rojo (principal) */
+  --red:           #ff2244;
+  --red-dark:      #cc1133;
+  --red-glow:      rgba(255, 34, 68, 0.4);
+
+  /* Azul (solo mi equipo) */
+  --cyan-bright:   #4fc3f7;
+  --cyan-mid:      #0099cc;
+  --cyan-dark:     #0066aa;
+
+  /* Oro (premium) */
+  --gold:          #ffe000;
+
+  /* Texto */
+  --text-primary:  #ffffff;
+  --text-secondary:#cccccc;
+  --text-muted:    #999999;
+
+  /* Semánticos */
+  --color-boost:   #00ff88;
+  --color-debuff:  #ff2244;
+  --color-neutral: #cccccc;
+  --color-burn:    #ff6633;
+  --color-para:    #ffcc00;
+  --color-poison:  #cc44ff;
+  --color-sleep:   #6688aa;
+  --color-freeze:  #aaddff;
+
+  /* Bordes */
+  --border-default: rgba(255, 34, 68, 0.2);
+  --border-active:  rgba(255, 34, 68, 0.6);
+  --border-subtle:  rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Press Start 2P', monospace;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+/* Phone-frame: centrado en desktop, full-height, scroll contenido internamente */
+#root {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#root::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.08) 3px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+}
+
+/* Scrollable containers */
+.scroll-y {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Pixel button */
+.btn-pixel {
+  box-shadow: 3px 3px 0 #cc1133;
+  border: 2px solid #ff2244;
+  background: #080808;
+  color: #ff2244;
+  font-family: 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+.btn-pixel:active {
+  box-shadow: 1px 1px 0 #cc1133;
+  transform: translate(2px, 2px);
+}
+
+.btn-pixel-blue {
+  box-shadow: 3px 3px 0 #0066aa;
+  border: 2px solid #4fc3f7;
+  background: #080808;
+  color: #4fc3f7;
+  font-family: 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+.btn-pixel-blue:active {
+  box-shadow: 1px 1px 0 #0066aa;
+  transform: translate(2px, 2px);
+}
+
+/* Tipo badge colors — dark pixel aesthetic */
+.type-normal   { background: #6a6a50; }
+.type-fire     { background: #c06020; }
+.type-water    { background: #3860c0; }
+.type-electric { background: #c0a000; }
+.type-grass    { background: #508030; }
+.type-ice      { background: #58a0a0; }
+.type-fighting { background: #882018; }
+.type-poison   { background: #702870; }
+.type-ground   { background: #a08030; }
+.type-flying   { background: #706abc; }
+.type-psychic  { background: #c03060; }
+.type-bug      { background: #607010; }
+.type-rock     { background: #806820; }
+.type-ghost    { background: #483868; }
+.type-dragon   { background: #4418c0; }
+.type-dark     { background: #483820; }
+.type-steel    { background: #787890; }
+.type-fairy    { background: #b07080; }
+
+/* Animaciones */
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 10px rgba(255, 34, 68, 0.4); }
+  50%       { box-shadow: 0 0 22px rgba(255, 34, 68, 0.8); }
+}
+
+@keyframes pulse-cyan {
+  0%, 100% { box-shadow: 0 0 10px rgba(79, 195, 247, 0.4); }
+  50%       { box-shadow: 0 0 22px rgba(79, 195, 247, 0.8); }
+}
+
+@keyframes count-down {
+  from { transform: scale(1.4); opacity: 0.5; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pixel-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.animate-slide-up   { animation: slide-up 0.25s ease-out; }
+.animate-fade-in    { animation: fade-in 0.2s ease-out; }
+.animate-pulse-red  { animation: pulse-red 2s ease-in-out infinite; }
+.animate-pulse-cyan { animation: pulse-cyan 2s ease-in-out infinite; }
+.animate-pixel-blink { animation: pixel-blink 1s step-start infinite; }

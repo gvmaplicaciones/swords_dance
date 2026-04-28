@@ -1,0 +1,6542 @@
+{
+  "Venusaur": {
+    "ability": {
+      "name": "chlorophyll",
+      "slug": "chlorophyll",
+      "usage": 0.889
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.276
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.298
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "sludgebomb",
+        "usage": 0.649
+      },
+      {
+        "name": "protect",
+        "usage": 0.578
+      },
+      {
+        "name": "sleeppowder",
+        "usage": 0.547
+      },
+      {
+        "name": "solarbeam",
+        "usage": 0.422
+      }
+    ]
+  },
+  "Charizard": {
+    "ability": {
+      "name": "solarpower",
+      "slug": "solarpower",
+      "usage": 0.986
+    },
+    "item": {
+      "name": "choicespecs",
+      "slug": "choicespecs",
+      "usage": 0.631
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.294
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "heatwave",
+        "usage": 0.982
+      },
+      {
+        "name": "airslash",
+        "usage": 0.744
+      },
+      {
+        "name": "weatherball",
+        "usage": 0.635
+      },
+      {
+        "name": "overheat",
+        "usage": 0.448
+      }
+    ]
+  },
+  "Blastoise": {
+    "ability": {
+      "name": "torrent",
+      "slug": "torrent",
+      "usage": 0.813
+    },
+    "item": {
+      "name": "assaultvest",
+      "slug": "assaultvest",
+      "usage": 0.245
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.234
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "fakeout",
+        "usage": 0.604
+      },
+      {
+        "name": "waterspout",
+        "usage": 0.318
+      },
+      {
+        "name": "protect",
+        "usage": 0.292
+      },
+      {
+        "name": "icebeam",
+        "usage": 0.281
+      }
+    ]
+  },
+  "Arbok": {
+    "ability": {
+      "name": "intimidate",
+      "slug": "intimidate",
+      "usage": 1
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.636
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.636
+    },
+    "spSpread": {
+      "hp": 21,
+      "atk": 16,
+      "def": 9,
+      "spAtk": 0,
+      "spDef": 9,
+      "spe": 11
+    },
+    "moves": [
+      {
+        "name": "leechlife",
+        "usage": 0.636
+      },
+      {
+        "name": "crunch",
+        "usage": 0.636
+      },
+      {
+        "name": "stockpile",
+        "usage": 0.636
+      },
+      {
+        "name": "poisonfang",
+        "usage": 0.636
+      }
+    ]
+  },
+  "Pikachu": {
+    "ability": {
+      "name": "lightningrod",
+      "slug": "lightningrod",
+      "usage": 0.524
+    },
+    "item": {
+      "name": "lightball",
+      "slug": "lightball",
+      "usage": 0.476
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.405
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "thunderbolt",
+        "usage": 0.643
+      },
+      {
+        "name": "protect",
+        "usage": 0.476
+      },
+      {
+        "name": "fakeout",
+        "usage": 0.405
+      },
+      {
+        "name": "upperhand",
+        "usage": 0.405
+      }
+    ]
+  },
+  "Raichu": {
+    "ability": {
+      "name": "lightningrod",
+      "slug": "lightningrod",
+      "usage": 0.962
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.568
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.159
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "fakeout",
+        "usage": 0.826
+      },
+      {
+        "name": "voltswitch",
+        "usage": 0.583
+      },
+      {
+        "name": "protect",
+        "usage": 0.538
+      },
+      {
+        "name": "nuzzle",
+        "usage": 0.53
+      }
+    ]
+  },
+  "Clefable": {
+    "ability": {
+      "name": "unaware",
+      "slug": "unaware",
+      "usage": 0.664
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.305
+    },
+    "nature": {
+      "name": "Calm",
+      "usage": 0.409
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 1,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "followme",
+        "usage": 0.977
+      },
+      {
+        "name": "moonblast",
+        "usage": 0.753
+      },
+      {
+        "name": "protect",
+        "usage": 0.595
+      },
+      {
+        "name": "helpinghand",
+        "usage": 0.421
+      }
+    ]
+  },
+  "Ninetales": {
+    "ability": {
+      "name": "drought",
+      "slug": "drought",
+      "usage": 0.91
+    },
+    "item": {
+      "name": "charcoal",
+      "slug": "charcoal",
+      "usage": 0.24
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.405
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.679
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.664
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.383
+      },
+      {
+        "name": "helpinghand",
+        "usage": 0.352
+      }
+    ]
+  },
+  "Arcanine": {
+    "ability": {
+      "name": "intimidate",
+      "slug": "intimidate",
+      "usage": 0.872
+    },
+    "item": {
+      "name": "choiceband",
+      "slug": "choiceband",
+      "usage": 0.223
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.204
+    },
+    "spSpread": {
+      "hp": 20,
+      "atk": 20,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 24
+    },
+    "moves": [
+      {
+        "name": "flareblitz",
+        "usage": 0.891
+      },
+      {
+        "name": "extremespeed",
+        "usage": 0.712
+      },
+      {
+        "name": "protect",
+        "usage": 0.432
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.41
+      }
+    ]
+  },
+  "Slowbro": {
+    "ability": {
+      "name": "regenerator",
+      "slug": "regenerator",
+      "usage": 0.695
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.484
+    },
+    "nature": {
+      "name": "Calm",
+      "usage": 0.189
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 14,
+      "spDef": 19,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "psychic",
+        "usage": 0.495
+      },
+      {
+        "name": "scald",
+        "usage": 0.474
+      },
+      {
+        "name": "muddywater",
+        "usage": 0.421
+      },
+      {
+        "name": "protect",
+        "usage": 0.263
+      }
+    ]
+  },
+  "Gengar": {
+    "ability": {
+      "name": "cursedbody",
+      "slug": "cursedbody",
+      "usage": 1
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.612
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.328
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "shadowball",
+        "usage": 0.743
+      },
+      {
+        "name": "sludgebomb",
+        "usage": 0.716
+      },
+      {
+        "name": "protect",
+        "usage": 0.619
+      },
+      {
+        "name": "icywind",
+        "usage": 0.291
+      }
+    ]
+  },
+  "Gyarados": {
+    "ability": {
+      "name": "intimidate",
+      "slug": "intimidate",
+      "usage": 0.988
+    },
+    "item": {
+      "name": "safetygoggles",
+      "slug": "safetygoggles",
+      "usage": 0.185
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.151
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "waterfall",
+        "usage": 0.861
+      },
+      {
+        "name": "protect",
+        "usage": 0.672
+      },
+      {
+        "name": "taunt",
+        "usage": 0.506
+      },
+      {
+        "name": "thunderwave",
+        "usage": 0.274
+      }
+    ]
+  },
+  "Ditto": {
+    "ability": {
+      "name": "imposter",
+      "slug": "imposter",
+      "usage": 0.961
+    },
+    "item": {
+      "name": "choicescarf",
+      "slug": "choicescarf",
+      "usage": 0.451
+    },
+    "nature": {
+      "name": "Impish",
+      "usage": 0.216
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 1
+    },
+    "moves": [
+      {
+        "name": "transform",
+        "usage": 1
+      }
+    ]
+  },
+  "Vaporeon": {
+    "ability": {
+      "name": "waterabsorb",
+      "slug": "waterabsorb",
+      "usage": 0.99
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.838
+    },
+    "nature": {
+      "name": "Bold",
+      "usage": 0.676
+    },
+    "spSpread": {
+      "hp": 30,
+      "atk": 0,
+      "def": 20,
+      "spAtk": 15,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.762
+      },
+      {
+        "name": "icebeam",
+        "usage": 0.714
+      },
+      {
+        "name": "aquaring",
+        "usage": 0.657
+      },
+      {
+        "name": "surf",
+        "usage": 0.505
+      }
+    ]
+  },
+  "Jolteon": {
+    "ability": {
+      "name": "voltabsorb",
+      "slug": "voltabsorb",
+      "usage": 0.885
+    },
+    "item": {
+      "name": "choicespecs",
+      "slug": "choicespecs",
+      "usage": 0.365
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.269
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "voltswitch",
+        "usage": 0.551
+      },
+      {
+        "name": "thunderbolt",
+        "usage": 0.506
+      },
+      {
+        "name": "electroweb",
+        "usage": 0.449
+      },
+      {
+        "name": "hypervoice",
+        "usage": 0.378
+      }
+    ]
+  },
+  "Flareon": {
+    "ability": {
+      "name": "guts",
+      "slug": "guts",
+      "usage": 0.71
+    },
+    "item": {
+      "name": "toxicorb",
+      "slug": "toxicorb",
+      "usage": 0.516
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.387
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "flareblitz",
+        "usage": 0.806
+      },
+      {
+        "name": "quickattack",
+        "usage": 0.742
+      },
+      {
+        "name": "facade",
+        "usage": 0.645
+      },
+      {
+        "name": "detect",
+        "usage": 0.548
+      }
+    ]
+  },
+  "Snorlax": {
+    "ability": {
+      "name": "thickfat",
+      "slug": "thickfat",
+      "usage": 0.781
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.329
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.257
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 20,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 12,
+      "spe": 1
+    },
+    "moves": [
+      {
+        "name": "bellydrum",
+        "usage": 0.49
+      },
+      {
+        "name": "protect",
+        "usage": 0.462
+      },
+      {
+        "name": "bodyslam",
+        "usage": 0.371
+      },
+      {
+        "name": "highhorsepower",
+        "usage": 0.343
+      }
+    ]
+  },
+  "Dragonite": {
+    "ability": {
+      "name": "multiscale",
+      "slug": "multiscale",
+      "usage": 0.701
+    },
+    "item": {
+      "name": "loadeddice",
+      "slug": "loadeddice",
+      "usage": 0.669
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.205
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.703
+      },
+      {
+        "name": "scaleshot",
+        "usage": 0.687
+      },
+      {
+        "name": "extremespeed",
+        "usage": 0.571
+      },
+      {
+        "name": "tailwind",
+        "usage": 0.494
+      }
+    ]
+  },
+  "Typhlosion": {
+    "ability": {
+      "name": "flashfire",
+      "slug": "flashfire",
+      "usage": 1
+    },
+    "item": {
+      "name": "choicespecs",
+      "slug": "choicespecs",
+      "usage": 0.5
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.457
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "eruption",
+        "usage": 1
+      },
+      {
+        "name": "scorchingsands",
+        "usage": 0.652
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.63
+      },
+      {
+        "name": "solarbeam",
+        "usage": 0.5
+      }
+    ]
+  },
+  "Feraligatr": {
+    "ability": {
+      "name": "sheerforce",
+      "slug": "sheerforce",
+      "usage": 1
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.8
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.633
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "crunch",
+        "usage": 0.967
+      },
+      {
+        "name": "icepunch",
+        "usage": 0.933
+      },
+      {
+        "name": "dragondance",
+        "usage": 0.7
+      },
+      {
+        "name": "aquajet",
+        "usage": 0.633
+      }
+    ]
+  },
+  "Ariados": {
+    "ability": {
+      "name": "sniper",
+      "slug": "sniper",
+      "usage": 0.778
+    },
+    "item": {
+      "name": "scopelens",
+      "slug": "scopelens",
+      "usage": 0.778
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.778
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.944
+      },
+      {
+        "name": "leechlife",
+        "usage": 0.722
+      },
+      {
+        "name": "poisonjab",
+        "usage": 0.722
+      },
+      {
+        "name": "suckerpunch",
+        "usage": 0.722
+      }
+    ]
+  },
+  "Ampharos": {
+    "ability": {
+      "name": "static",
+      "slug": "static",
+      "usage": 0.747
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.253
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.253
+    },
+    "spSpread": {
+      "hp": 20,
+      "atk": 0,
+      "def": 19,
+      "spAtk": 15,
+      "spDef": 11,
+      "spe": 1
+    },
+    "moves": [
+      {
+        "name": "dazzlinggleam",
+        "usage": 0.69
+      },
+      {
+        "name": "thunderbolt",
+        "usage": 0.54
+      },
+      {
+        "name": "protect",
+        "usage": 0.506
+      },
+      {
+        "name": "discharge",
+        "usage": 0.356
+      }
+    ]
+  },
+  "Azumarill": {
+    "ability": {
+      "name": "hugepower",
+      "slug": "hugepower",
+      "usage": 0.947
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.695
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.195
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 32,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 1
+    },
+    "moves": [
+      {
+        "name": "aquajet",
+        "usage": 0.841
+      },
+      {
+        "name": "playrough",
+        "usage": 0.829
+      },
+      {
+        "name": "bellydrum",
+        "usage": 0.78
+      },
+      {
+        "name": "protect",
+        "usage": 0.671
+      }
+    ]
+  },
+  "Politoed": {
+    "ability": {
+      "name": "drizzle",
+      "slug": "drizzle",
+      "usage": 0.954
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.477
+    },
+    "nature": {
+      "name": "Calm",
+      "usage": 0.265
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 8,
+      "spAtk": 1,
+      "spDef": 10,
+      "spe": 15
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.888
+      },
+      {
+        "name": "weatherball",
+        "usage": 0.81
+      },
+      {
+        "name": "perishsong",
+        "usage": 0.647
+      },
+      {
+        "name": "encore",
+        "usage": 0.491
+      }
+    ]
+  },
+  "Espeon": {
+    "ability": {
+      "name": "magicbounce",
+      "slug": "magicbounce",
+      "usage": 1
+    },
+    "item": {
+      "name": "choicescarf",
+      "slug": "choicescarf",
+      "usage": 0.346
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.321
+    },
+    "spSpread": {
+      "hp": 6,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 27
+    },
+    "moves": [
+      {
+        "name": "dazzlinggleam",
+        "usage": 0.814
+      },
+      {
+        "name": "expandingforce",
+        "usage": 0.724
+      },
+      {
+        "name": "shadowball",
+        "usage": 0.577
+      },
+      {
+        "name": "protect",
+        "usage": 0.513
+      }
+    ]
+  },
+  "Umbreon": {
+    "ability": {
+      "name": "innerfocus",
+      "slug": "innerfocus",
+      "usage": 0.743
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.857
+    },
+    "nature": {
+      "name": "Calm",
+      "usage": 0.219
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "foulplay",
+        "usage": 0.848
+      },
+      {
+        "name": "protect",
+        "usage": 0.638
+      },
+      {
+        "name": "moonlight",
+        "usage": 0.61
+      },
+      {
+        "name": "toxic",
+        "usage": 0.571
+      }
+    ]
+  },
+  "Slowking": {
+    "ability": {
+      "name": "regenerator",
+      "slug": "regenerator",
+      "usage": 0.686
+    },
+    "item": {
+      "name": "psychicseed",
+      "slug": "psychicseed",
+      "usage": 0.233
+    },
+    "nature": {
+      "name": "Sassy",
+      "usage": 0.233
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "trickroom",
+        "usage": 0.64
+      },
+      {
+        "name": "expandingforce",
+        "usage": 0.57
+      },
+      {
+        "name": "muddywater",
+        "usage": 0.36
+      },
+      {
+        "name": "chillyreception",
+        "usage": 0.326
+      }
+    ]
+  },
+  "Forretress": {
+    "ability": {
+      "name": "sturdy",
+      "slug": "sturdy",
+      "usage": 1
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.714
+    },
+    "nature": {
+      "name": "Relaxed",
+      "usage": 0.714
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 1,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "gyroball",
+        "usage": 1
+      },
+      {
+        "name": "protect",
+        "usage": 0.857
+      },
+      {
+        "name": "spikes",
+        "usage": 0.714
+      },
+      {
+        "name": "thunderwave",
+        "usage": 0.714
+      }
+    ]
+  },
+  "Scizor": {
+    "ability": {
+      "name": "technician",
+      "slug": "technician",
+      "usage": 0.994
+    },
+    "item": {
+      "name": "choiceband",
+      "slug": "choiceband",
+      "usage": 0.48
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.188
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "bulletpunch",
+        "usage": 1
+      },
+      {
+        "name": "uturn",
+        "usage": 0.679
+      },
+      {
+        "name": "dualwingbeat",
+        "usage": 0.434
+      },
+      {
+        "name": "bugbite",
+        "usage": 0.361
+      }
+    ]
+  },
+  "Heracross": {
+    "ability": {
+      "name": "moxie",
+      "slug": "moxie",
+      "usage": 0.531
+    },
+    "item": {
+      "name": "loadeddice",
+      "slug": "loadeddice",
+      "usage": 0.551
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.388
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "closecombat",
+        "usage": 0.847
+      },
+      {
+        "name": "protect",
+        "usage": 0.816
+      },
+      {
+        "name": "pinmissile",
+        "usage": 0.551
+      },
+      {
+        "name": "rockblast",
+        "usage": 0.327
+      }
+    ]
+  },
+  "Skarmory": {
+    "ability": {
+      "name": "sturdy",
+      "slug": "sturdy",
+      "usage": 0.833
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.7
+    },
+    "nature": {
+      "name": "Bold",
+      "usage": 0.6
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "tailwind",
+        "usage": 0.833
+      },
+      {
+        "name": "irondefense",
+        "usage": 0.767
+      },
+      {
+        "name": "bodypress",
+        "usage": 0.767
+      },
+      {
+        "name": "nightslash",
+        "usage": 0.3
+      }
+    ]
+  },
+  "Houndoom": {
+    "ability": {
+      "name": "flashfire",
+      "slug": "flashfire",
+      "usage": 0.909
+    },
+    "item": {
+      "name": "choicespecs",
+      "slug": "choicespecs",
+      "usage": 0.636
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.636
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "darkpulse",
+        "usage": 0.909
+      },
+      {
+        "name": "snarl",
+        "usage": 0.727
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.636
+      },
+      {
+        "name": "sludgebomb",
+        "usage": 0.636
+      }
+    ]
+  },
+  "Tyranitar": {
+    "ability": {
+      "name": "sandstream",
+      "slug": "sandstream",
+      "usage": 1
+    },
+    "item": {
+      "name": "assaultvest",
+      "slug": "assaultvest",
+      "usage": 0.53
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.122
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "rockslide",
+        "usage": 0.856
+      },
+      {
+        "name": "knockoff",
+        "usage": 0.759
+      },
+      {
+        "name": "terablast",
+        "usage": 0.577
+      },
+      {
+        "name": "lowkick",
+        "usage": 0.477
+      }
+    ]
+  },
+  "Pelipper": {
+    "ability": {
+      "name": "drizzle",
+      "slug": "drizzle",
+      "usage": 0.996
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.477
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.118
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "hurricane",
+        "usage": 0.945
+      },
+      {
+        "name": "tailwind",
+        "usage": 0.762
+      },
+      {
+        "name": "weatherball",
+        "usage": 0.72
+      },
+      {
+        "name": "protect",
+        "usage": 0.543
+      }
+    ]
+  },
+  "Gardevoir": {
+    "ability": {
+      "name": "telepathy",
+      "slug": "telepathy",
+      "usage": 0.572
+    },
+    "item": {
+      "name": "choicescarf",
+      "slug": "choicescarf",
+      "usage": 0.216
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.402
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "moonblast",
+        "usage": 0.845
+      },
+      {
+        "name": "protect",
+        "usage": 0.474
+      },
+      {
+        "name": "expandingforce",
+        "usage": 0.448
+      },
+      {
+        "name": "psychic",
+        "usage": 0.397
+      }
+    ]
+  },
+  "Sableye": {
+    "ability": {
+      "name": "prankster",
+      "slug": "prankster",
+      "usage": 1
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.219
+    },
+    "nature": {
+      "name": "Impish",
+      "usage": 0.123
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "encore",
+        "usage": 0.584
+      },
+      {
+        "name": "fakeout",
+        "usage": 0.553
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.378
+      },
+      {
+        "name": "disable",
+        "usage": 0.252
+      }
+    ]
+  },
+  "Medicham": {
+    "ability": {
+      "name": "purepower",
+      "slug": "purepower",
+      "usage": 0.868
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.263
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.368
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "skillswap",
+        "usage": 0.697
+      },
+      {
+        "name": "fakeout",
+        "usage": 0.684
+      },
+      {
+        "name": "zenheadbutt",
+        "usage": 0.368
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.303
+      }
+    ]
+  },
+  "Camerupt": {
+    "ability": {
+      "name": "solidrock",
+      "slug": "solidrock",
+      "usage": 0.63
+    },
+    "item": {
+      "name": "assaultvest",
+      "slug": "assaultvest",
+      "usage": 0.37
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.37
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "earthquake",
+        "usage": 0.519
+      },
+      {
+        "name": "rockslide",
+        "usage": 0.444
+      },
+      {
+        "name": "protect",
+        "usage": 0.37
+      },
+      {
+        "name": "terablast",
+        "usage": 0.37
+      }
+    ]
+  },
+  "Torkoal": {
+    "ability": {
+      "name": "drought",
+      "slug": "drought",
+      "usage": 0.995
+    },
+    "item": {
+      "name": "choicespecs",
+      "slug": "choicespecs",
+      "usage": 0.362
+    },
+    "nature": {
+      "name": "Quiet",
+      "usage": 0.353
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "eruption",
+        "usage": 0.943
+      },
+      {
+        "name": "protect",
+        "usage": 0.557
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.526
+      },
+      {
+        "name": "earthpower",
+        "usage": 0.518
+      }
+    ]
+  },
+  "Altaria": {
+    "ability": {
+      "name": "cloudnine",
+      "slug": "cloudnine",
+      "usage": 0.777
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.369
+    },
+    "nature": {
+      "name": "Impish",
+      "usage": 0.214
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 1
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.699
+      },
+      {
+        "name": "perishsong",
+        "usage": 0.621
+      },
+      {
+        "name": "tailwind",
+        "usage": 0.524
+      },
+      {
+        "name": "dracometeor",
+        "usage": 0.272
+      }
+    ]
+  },
+  "Milotic": {
+    "ability": {
+      "name": "competitive",
+      "slug": "competitive",
+      "usage": 0.842
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.372
+    },
+    "nature": {
+      "name": "Calm",
+      "usage": 0.085
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "scald",
+        "usage": 0.555
+      },
+      {
+        "name": "protect",
+        "usage": 0.519
+      },
+      {
+        "name": "icebeam",
+        "usage": 0.47
+      },
+      {
+        "name": "icywind",
+        "usage": 0.333
+      }
+    ]
+  },
+  "Banette": {
+    "ability": {
+      "name": "frisk",
+      "slug": "frisk",
+      "usage": 0.571
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.857
+    },
+    "nature": {
+      "name": "Sassy",
+      "usage": 0.571
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 1,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "trickroom",
+        "usage": 0.857
+      },
+      {
+        "name": "gunkshot",
+        "usage": 0.571
+      },
+      {
+        "name": "shadowsneak",
+        "usage": 0.571
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.571
+      }
+    ]
+  },
+  "Glalie": {
+    "ability": {
+      "name": "moody",
+      "slug": "moody",
+      "usage": 1
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 1
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 1
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 2,
+      "spAtk": 1,
+      "spDef": 16,
+      "spe": 15
+    },
+    "moves": [
+      {
+        "name": "sheercold",
+        "usage": 1
+      },
+      {
+        "name": "freezedry",
+        "usage": 1
+      },
+      {
+        "name": "protect",
+        "usage": 1
+      },
+      {
+        "name": "substitute",
+        "usage": 1
+      }
+    ]
+  },
+  "Torterra": {
+    "ability": {
+      "name": "shellarmor",
+      "slug": "shellarmor",
+      "usage": 0.778
+    },
+    "item": {
+      "name": "roomservice",
+      "slug": "roomservice",
+      "usage": 0.267
+    },
+    "nature": {
+      "name": "Serious",
+      "usage": 0.267
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 1,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.622
+      },
+      {
+        "name": "earthquake",
+        "usage": 0.611
+      },
+      {
+        "name": "rockslide",
+        "usage": 0.444
+      },
+      {
+        "name": "grasspledge",
+        "usage": 0.389
+      }
+    ]
+  },
+  "Infernape": {
+    "ability": {
+      "name": "blaze",
+      "slug": "blaze",
+      "usage": 0.732
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.377
+    },
+    "nature": {
+      "name": "Hasty",
+      "usage": 0.514
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "fakeout",
+        "usage": 0.681
+      },
+      {
+        "name": "protect",
+        "usage": 0.616
+      },
+      {
+        "name": "firepledge",
+        "usage": 0.514
+      },
+      {
+        "name": "rockslide",
+        "usage": 0.514
+      }
+    ]
+  },
+  "Empoleon": {
+    "ability": {
+      "name": "competitive",
+      "slug": "competitive",
+      "usage": 1
+    },
+    "item": {
+      "name": "safetygoggles",
+      "slug": "safetygoggles",
+      "usage": 0.195
+    },
+    "nature": {
+      "name": "Sassy",
+      "usage": 0.308
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 1,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.578
+      },
+      {
+        "name": "waterpledge",
+        "usage": 0.568
+      },
+      {
+        "name": "flashcannon",
+        "usage": 0.395
+      },
+      {
+        "name": "icebeam",
+        "usage": 0.319
+      }
+    ]
+  },
+  "Luxray": {
+    "ability": {
+      "name": "intimidate",
+      "slug": "intimidate",
+      "usage": 0.71
+    },
+    "item": {
+      "name": "flameorb",
+      "slug": "flameorb",
+      "usage": 0.29
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.242
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.887
+      },
+      {
+        "name": "voltswitch",
+        "usage": 0.5
+      },
+      {
+        "name": "discharge",
+        "usage": 0.484
+      },
+      {
+        "name": "quickattack",
+        "usage": 0.452
+      }
+    ]
+  },
+  "Rampardos": {
+    "ability": {
+      "name": "sheerforce",
+      "slug": "sheerforce",
+      "usage": 0.75
+    },
+    "item": {
+      "name": "clearamulet",
+      "slug": "clearamulet",
+      "usage": 0.438
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.5
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.75
+      },
+      {
+        "name": "rockslide",
+        "usage": 0.5
+      },
+      {
+        "name": "headsmash",
+        "usage": 0.438
+      },
+      {
+        "name": "firepunch",
+        "usage": 0.438
+      }
+    ]
+  },
+  "Bastiodon": {
+    "ability": {
+      "name": "sturdy",
+      "slug": "sturdy",
+      "usage": 1
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.818
+    },
+    "nature": {
+      "name": "Careful",
+      "usage": 0.818
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 1,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "irondefense",
+        "usage": 1
+      },
+      {
+        "name": "protect",
+        "usage": 0.909
+      },
+      {
+        "name": "bodypress",
+        "usage": 0.818
+      },
+      {
+        "name": "heavyslam",
+        "usage": 0.818
+      }
+    ]
+  },
+  "Spiritomb": {
+    "ability": {
+      "name": "infiltrator",
+      "slug": "infiltrator",
+      "usage": 0.673
+    },
+    "item": {
+      "name": "mentalherb",
+      "slug": "mentalherb",
+      "usage": 0.346
+    },
+    "nature": {
+      "name": "Sassy",
+      "usage": 0.327
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 0,
+      "def": 11,
+      "spAtk": 1,
+      "spDef": 22,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "trickroom",
+        "usage": 1
+      },
+      {
+        "name": "foulplay",
+        "usage": 0.481
+      },
+      {
+        "name": "darkpulse",
+        "usage": 0.481
+      },
+      {
+        "name": "imprison",
+        "usage": 0.327
+      }
+    ]
+  },
+  "Garchomp": {
+    "ability": {
+      "name": "roughskin",
+      "slug": "roughskin",
+      "usage": 0.815
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.481
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.304
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "earthquake",
+        "usage": 0.859
+      },
+      {
+        "name": "dragonclaw",
+        "usage": 0.818
+      },
+      {
+        "name": "protect",
+        "usage": 0.798
+      },
+      {
+        "name": "stompingtantrum",
+        "usage": 0.623
+      }
+    ]
+  },
+  "Lucario": {
+    "ability": {
+      "name": "innerfocus",
+      "slug": "innerfocus",
+      "usage": 0.601
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.368
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.368
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "closecombat",
+        "usage": 0.472
+      },
+      {
+        "name": "extremespeed",
+        "usage": 0.442
+      },
+      {
+        "name": "protect",
+        "usage": 0.436
+      },
+      {
+        "name": "bulletpunch",
+        "usage": 0.411
+      }
+    ]
+  },
+  "Hippowdon": {
+    "ability": {
+      "name": "sandstream",
+      "slug": "sandstream",
+      "usage": 1
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.346
+    },
+    "nature": {
+      "name": "Impish",
+      "usage": 0.346
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 1,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.859
+      },
+      {
+        "name": "slackoff",
+        "usage": 0.744
+      },
+      {
+        "name": "yawn",
+        "usage": 0.538
+      },
+      {
+        "name": "highhorsepower",
+        "usage": 0.449
+      }
+    ]
+  },
+  "Toxicroak": {
+    "ability": {
+      "name": "dryskin",
+      "slug": "dryskin",
+      "usage": 0.959
+    },
+    "item": {
+      "name": "clearamulet",
+      "slug": "clearamulet",
+      "usage": 0.572
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.421
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "fakeout",
+        "usage": 0.814
+      },
+      {
+        "name": "suckerpunch",
+        "usage": 0.531
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.503
+      },
+      {
+        "name": "poisonjab",
+        "usage": 0.49
+      }
+    ]
+  },
+  "Abomasnow": {
+    "ability": {
+      "name": "snowwarning",
+      "slug": "snowwarning",
+      "usage": 0.93
+    },
+    "item": {
+      "name": "lightclay",
+      "slug": "lightclay",
+      "usage": 0.26
+    },
+    "nature": {
+      "name": "Quiet",
+      "usage": 0.14
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 1,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "blizzard",
+        "usage": 0.85
+      },
+      {
+        "name": "protect",
+        "usage": 0.63
+      },
+      {
+        "name": "auroraveil",
+        "usage": 0.6
+      },
+      {
+        "name": "energyball",
+        "usage": 0.29
+      }
+    ]
+  },
+  "Weavile": {
+    "ability": {
+      "name": "pickpocket",
+      "slug": "pickpocket",
+      "usage": 0.562
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.657
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.385
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "knockoff",
+        "usage": 0.834
+      },
+      {
+        "name": "icespinner",
+        "usage": 0.533
+      },
+      {
+        "name": "fakeout",
+        "usage": 0.515
+      },
+      {
+        "name": "tripleaxel",
+        "usage": 0.432
+      }
+    ]
+  },
+  "Rhyperior": {
+    "ability": {
+      "name": "solidrock",
+      "slug": "solidrock",
+      "usage": 0.831
+    },
+    "item": {
+      "name": "assaultvest",
+      "slug": "assaultvest",
+      "usage": 0.5
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.253
+    },
+    "spSpread": {
+      "hp": 16,
+      "atk": 20,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 28,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "rockslide",
+        "usage": 0.981
+      },
+      {
+        "name": "highhorsepower",
+        "usage": 0.552
+      },
+      {
+        "name": "earthquake",
+        "usage": 0.448
+      },
+      {
+        "name": "protect",
+        "usage": 0.448
+      }
+    ]
+  },
+  "Leafeon": {
+    "ability": {
+      "name": "chlorophyll",
+      "slug": "chlorophyll",
+      "usage": 0.914
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.857
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.371
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 32,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 1
+    },
+    "moves": [
+      {
+        "name": "terablast",
+        "usage": 0.8
+      },
+      {
+        "name": "solarblade",
+        "usage": 0.743
+      },
+      {
+        "name": "leafblade",
+        "usage": 0.686
+      },
+      {
+        "name": "swordsdance",
+        "usage": 0.571
+      }
+    ]
+  },
+  "Glaceon": {
+    "ability": {
+      "name": "snowcloak",
+      "slug": "snowcloak",
+      "usage": 0.775
+    },
+    "item": {
+      "name": "choicespecs",
+      "slug": "choicespecs",
+      "usage": 0.275
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.25
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 2,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "blizzard",
+        "usage": 0.825
+      },
+      {
+        "name": "freezedry",
+        "usage": 0.75
+      },
+      {
+        "name": "shadowball",
+        "usage": 0.575
+      },
+      {
+        "name": "snowscape",
+        "usage": 0.35
+      }
+    ]
+  },
+  "Gliscor": {
+    "ability": {
+      "name": "poisonheal",
+      "slug": "poisonheal",
+      "usage": 0.889
+    },
+    "item": {
+      "name": "toxicorb",
+      "slug": "toxicorb",
+      "usage": 0.847
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.3
+    },
+    "spSpread": {
+      "hp": 30,
+      "atk": 4,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 30,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.763
+      },
+      {
+        "name": "highhorsepower",
+        "usage": 0.642
+      },
+      {
+        "name": "dualwingbeat",
+        "usage": 0.516
+      },
+      {
+        "name": "swordsdance",
+        "usage": 0.484
+      }
+    ]
+  },
+  "Mamoswine": {
+    "ability": {
+      "name": "oblivious",
+      "slug": "oblivious",
+      "usage": 0.683
+    },
+    "item": {
+      "name": "assaultvest",
+      "slug": "assaultvest",
+      "usage": 0.327
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.279
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "iceshard",
+        "usage": 0.952
+      },
+      {
+        "name": "earthquake",
+        "usage": 0.856
+      },
+      {
+        "name": "iciclecrash",
+        "usage": 0.769
+      },
+      {
+        "name": "protect",
+        "usage": 0.519
+      }
+    ]
+  },
+  "Gallade": {
+    "ability": {
+      "name": "sharpness",
+      "slug": "sharpness",
+      "usage": 0.92
+    },
+    "item": {
+      "name": "clearamulet",
+      "slug": "clearamulet",
+      "usage": 0.501
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.238
+    },
+    "spSpread": {
+      "hp": 27,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 6
+    },
+    "moves": [
+      {
+        "name": "sacredsword",
+        "usage": 0.926
+      },
+      {
+        "name": "psychocut",
+        "usage": 0.899
+      },
+      {
+        "name": "wideguard",
+        "usage": 0.605
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.529
+      }
+    ]
+  },
+  "Froslass": {
+    "ability": {
+      "name": "snowcloak",
+      "slug": "snowcloak",
+      "usage": 0.785
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.8
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.385
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "taunt",
+        "usage": 0.831
+      },
+      {
+        "name": "frostbreath",
+        "usage": 0.831
+      },
+      {
+        "name": "icywind",
+        "usage": 0.631
+      },
+      {
+        "name": "poltergeist",
+        "usage": 0.585
+      }
+    ]
+  },
+  "Serperior": {
+    "ability": {
+      "name": "contrary",
+      "slug": "contrary",
+      "usage": 0.988
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.302
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.266
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "leafstorm",
+        "usage": 0.988
+      },
+      {
+        "name": "terablast",
+        "usage": 0.692
+      },
+      {
+        "name": "dragonpulse",
+        "usage": 0.615
+      },
+      {
+        "name": "protect",
+        "usage": 0.615
+      }
+    ]
+  },
+  "Emboar": {
+    "ability": {
+      "name": "reckless",
+      "slug": "reckless",
+      "usage": 1
+    },
+    "item": {
+      "name": "choiceband",
+      "slug": "choiceband",
+      "usage": 0.833
+    },
+    "nature": {
+      "name": "Brave",
+      "usage": 0.583
+    },
+    "spSpread": {
+      "hp": 14,
+      "atk": 32,
+      "def": 10,
+      "spAtk": 0,
+      "spDef": 9,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "flareblitz",
+        "usage": 1
+      },
+      {
+        "name": "headsmash",
+        "usage": 0.833
+      },
+      {
+        "name": "drainpunch",
+        "usage": 0.833
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.667
+      }
+    ]
+  },
+  "Samurott": {
+    "ability": {
+      "name": "torrent",
+      "slug": "torrent",
+      "usage": 1
+    },
+    "item": {
+      "name": "safetygoggles",
+      "slug": "safetygoggles",
+      "usage": 0.5
+    },
+    "nature": {
+      "name": "Hasty",
+      "usage": 0.5
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 1,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "waterpledge",
+        "usage": 1
+      },
+      {
+        "name": "upperhand",
+        "usage": 1
+      },
+      {
+        "name": "detect",
+        "usage": 0.5
+      },
+      {
+        "name": "icywind",
+        "usage": 0.5
+      }
+    ]
+  },
+  "Excadrill": {
+    "ability": {
+      "name": "sandrush",
+      "slug": "sandrush",
+      "usage": 0.933
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.341
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.272
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "ironhead",
+        "usage": 0.904
+      },
+      {
+        "name": "earthquake",
+        "usage": 0.769
+      },
+      {
+        "name": "protect",
+        "usage": 0.718
+      },
+      {
+        "name": "highhorsepower",
+        "usage": 0.645
+      }
+    ]
+  },
+  "Conkeldurr": {
+    "ability": {
+      "name": "guts",
+      "slug": "guts",
+      "usage": 0.848
+    },
+    "item": {
+      "name": "flameorb",
+      "slug": "flameorb",
+      "usage": 0.838
+    },
+    "nature": {
+      "name": "Impish",
+      "usage": 0.314
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 1,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "drainpunch",
+        "usage": 0.8
+      },
+      {
+        "name": "protect",
+        "usage": 0.705
+      },
+      {
+        "name": "facade",
+        "usage": 0.41
+      },
+      {
+        "name": "knockoff",
+        "usage": 0.324
+      }
+    ]
+  },
+  "Whimsicott": {
+    "ability": {
+      "name": "prankster",
+      "slug": "prankster",
+      "usage": 1
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.522
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.153
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "tailwind",
+        "usage": 0.982
+      },
+      {
+        "name": "moonblast",
+        "usage": 0.826
+      },
+      {
+        "name": "encore",
+        "usage": 0.651
+      },
+      {
+        "name": "sunnyday",
+        "usage": 0.321
+      }
+    ]
+  },
+  "Krookodile": {
+    "ability": {
+      "name": "intimidate",
+      "slug": "intimidate",
+      "usage": 0.66
+    },
+    "item": {
+      "name": "clearamulet",
+      "slug": "clearamulet",
+      "usage": 0.176
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.32
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "earthquake",
+        "usage": 0.641
+      },
+      {
+        "name": "knockoff",
+        "usage": 0.601
+      },
+      {
+        "name": "protect",
+        "usage": 0.503
+      },
+      {
+        "name": "rockslide",
+        "usage": 0.418
+      }
+    ]
+  },
+  "Zoroark": {
+    "ability": {
+      "name": "illusion",
+      "slug": "illusion",
+      "usage": 1
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.556
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.5
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.556
+      },
+      {
+        "name": "suckerpunch",
+        "usage": 0.537
+      },
+      {
+        "name": "faketears",
+        "usage": 0.5
+      },
+      {
+        "name": "taunt",
+        "usage": 0.5
+      }
+    ]
+  },
+  "Reuniclus": {
+    "ability": {
+      "name": "magicguard",
+      "slug": "magicguard",
+      "usage": 0.575
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.534
+    },
+    "nature": {
+      "name": "Quiet",
+      "usage": 0.212
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "trickroom",
+        "usage": 0.753
+      },
+      {
+        "name": "expandingforce",
+        "usage": 0.692
+      },
+      {
+        "name": "protect",
+        "usage": 0.486
+      },
+      {
+        "name": "terablast",
+        "usage": 0.295
+      }
+    ]
+  },
+  "Chandelure": {
+    "ability": {
+      "name": "flashfire",
+      "slug": "flashfire",
+      "usage": 0.738
+    },
+    "item": {
+      "name": "choicescarf",
+      "slug": "choicescarf",
+      "usage": 0.218
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.343
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "shadowball",
+        "usage": 0.853
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.67
+      },
+      {
+        "name": "energyball",
+        "usage": 0.501
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.368
+      }
+    ]
+  },
+  "Beartic": {
+    "ability": {
+      "name": "swiftswim",
+      "slug": "swiftswim",
+      "usage": 0.706
+    },
+    "item": {
+      "name": "loadeddice",
+      "slug": "loadeddice",
+      "usage": 0.324
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.294
+    },
+    "spSpread": {
+      "hp": 7,
+      "atk": 25,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "iciclecrash",
+        "usage": 0.559
+      },
+      {
+        "name": "aquajet",
+        "usage": 0.5
+      },
+      {
+        "name": "protect",
+        "usage": 0.382
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.353
+      }
+    ]
+  },
+  "Golurk": {
+    "ability": {
+      "name": "noguard",
+      "slug": "noguard",
+      "usage": 0.854
+    },
+    "item": {
+      "name": "ejectpack",
+      "slug": "ejectpack",
+      "usage": 0.448
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.427
+    },
+    "spSpread": {
+      "hp": 21,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 12
+    },
+    "moves": [
+      {
+        "name": "dynamicpunch",
+        "usage": 0.771
+      },
+      {
+        "name": "highhorsepower",
+        "usage": 0.677
+      },
+      {
+        "name": "stoneedge",
+        "usage": 0.542
+      },
+      {
+        "name": "poltergeist",
+        "usage": 0.51
+      }
+    ]
+  },
+  "Hydreigon": {
+    "ability": {
+      "name": "levitate",
+      "slug": "levitate",
+      "usage": 1
+    },
+    "item": {
+      "name": "choicespecs",
+      "slug": "choicespecs",
+      "usage": 0.189
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.385
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "dracometeor",
+        "usage": 0.804
+      },
+      {
+        "name": "darkpulse",
+        "usage": 0.665
+      },
+      {
+        "name": "protect",
+        "usage": 0.508
+      },
+      {
+        "name": "snarl",
+        "usage": 0.465
+      }
+    ]
+  },
+  "Volcarona": {
+    "ability": {
+      "name": "flamebody",
+      "slug": "flamebody",
+      "usage": 0.987
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.276
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.069
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "quiverdance",
+        "usage": 0.746
+      },
+      {
+        "name": "protect",
+        "usage": 0.69
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.584
+      },
+      {
+        "name": "gigadrain",
+        "usage": 0.385
+      }
+    ]
+  },
+  "Chesnaught": {
+    "ability": {
+      "name": "bulletproof",
+      "slug": "bulletproof",
+      "usage": 0.917
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.458
+    },
+    "nature": {
+      "name": "Impish",
+      "usage": 0.292
+    },
+    "spSpread": {
+      "hp": 17,
+      "atk": 11,
+      "def": 26,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 11
+    },
+    "moves": [
+      {
+        "name": "spikyshield",
+        "usage": 0.861
+      },
+      {
+        "name": "bodypress",
+        "usage": 0.736
+      },
+      {
+        "name": "knockoff",
+        "usage": 0.375
+      },
+      {
+        "name": "seedbomb",
+        "usage": 0.361
+      }
+    ]
+  },
+  "Delphox": {
+    "ability": {
+      "name": "magician",
+      "slug": "magician",
+      "usage": 0.707
+    },
+    "item": {
+      "name": "psychicseed",
+      "slug": "psychicseed",
+      "usage": 0.268
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.305
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "expandingforce",
+        "usage": 0.762
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.482
+      },
+      {
+        "name": "protect",
+        "usage": 0.451
+      },
+      {
+        "name": "dazzlinggleam",
+        "usage": 0.384
+      }
+    ]
+  },
+  "Greninja": {
+    "ability": {
+      "name": "protean",
+      "slug": "protean",
+      "usage": 0.556
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.257
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.344
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "darkpulse",
+        "usage": 0.664
+      },
+      {
+        "name": "watershuriken",
+        "usage": 0.552
+      },
+      {
+        "name": "surf",
+        "usage": 0.34
+      },
+      {
+        "name": "protect",
+        "usage": 0.311
+      }
+    ]
+  },
+  "Talonflame": {
+    "ability": {
+      "name": "galewings",
+      "slug": "galewings",
+      "usage": 0.971
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.551
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.255
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "tailwind",
+        "usage": 0.964
+      },
+      {
+        "name": "bravebird",
+        "usage": 0.681
+      },
+      {
+        "name": "flareblitz",
+        "usage": 0.518
+      },
+      {
+        "name": "protect",
+        "usage": 0.467
+      }
+    ]
+  },
+  "Vivillon": {
+    "ability": {
+      "name": "compoundeyes",
+      "slug": "compoundeyes",
+      "usage": 0.789
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.912
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.696
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "sleeppowder",
+        "usage": 0.947
+      },
+      {
+        "name": "protect",
+        "usage": 0.938
+      },
+      {
+        "name": "ragepowder",
+        "usage": 0.85
+      },
+      {
+        "name": "hurricane",
+        "usage": 0.692
+      }
+    ]
+  },
+  "Florges": {
+    "ability": {
+      "name": "symbiosis",
+      "slug": "symbiosis",
+      "usage": 0.707
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.598
+    },
+    "nature": {
+      "name": "Bold",
+      "usage": 0.354
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "pollenpuff",
+        "usage": 0.744
+      },
+      {
+        "name": "dazzlinggleam",
+        "usage": 0.695
+      },
+      {
+        "name": "protect",
+        "usage": 0.659
+      },
+      {
+        "name": "helpinghand",
+        "usage": 0.402
+      }
+    ]
+  },
+  "Meowstic": {
+    "ability": {
+      "name": "prankster",
+      "slug": "prankster",
+      "usage": 0.824
+    },
+    "item": {
+      "name": "lightclay",
+      "slug": "lightclay",
+      "usage": 0.343
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.176
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "lightscreen",
+        "usage": 0.5
+      },
+      {
+        "name": "fakeout",
+        "usage": 0.491
+      },
+      {
+        "name": "reflect",
+        "usage": 0.398
+      },
+      {
+        "name": "thunderwave",
+        "usage": 0.343
+      }
+    ]
+  },
+  "Clawitzer": {
+    "ability": {
+      "name": "megalauncher",
+      "slug": "megalauncher",
+      "usage": 1
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.778
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.537
+    },
+    "spSpread": {
+      "hp": 13,
+      "atk": 0,
+      "def": 1,
+      "spAtk": 23,
+      "spDef": 0,
+      "spe": 28
+    },
+    "moves": [
+      {
+        "name": "aurasphere",
+        "usage": 0.981
+      },
+      {
+        "name": "waterpulse",
+        "usage": 0.907
+      },
+      {
+        "name": "darkpulse",
+        "usage": 0.852
+      },
+      {
+        "name": "dragonpulse",
+        "usage": 0.796
+      }
+    ]
+  },
+  "Sylveon": {
+    "ability": {
+      "name": "pixilate",
+      "slug": "pixilate",
+      "usage": 0.998
+    },
+    "item": {
+      "name": "throatspray",
+      "slug": "throatspray",
+      "usage": 0.372
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.224
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "hypervoice",
+        "usage": 0.963
+      },
+      {
+        "name": "protect",
+        "usage": 0.601
+      },
+      {
+        "name": "terablast",
+        "usage": 0.541
+      },
+      {
+        "name": "quickattack",
+        "usage": 0.382
+      }
+    ]
+  },
+  "Hawlucha": {
+    "ability": {
+      "name": "unburden",
+      "slug": "unburden",
+      "usage": 0.78
+    },
+    "item": {
+      "name": "weaknesspolicy",
+      "slug": "weaknesspolicy",
+      "usage": 0.366
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.561
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "acrobatics",
+        "usage": 0.829
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.732
+      },
+      {
+        "name": "protect",
+        "usage": 0.61
+      },
+      {
+        "name": "throatchop",
+        "usage": 0.366
+      }
+    ]
+  },
+  "Dedenne": {
+    "ability": {
+      "name": "cheekpouch",
+      "slug": "cheekpouch",
+      "usage": 0.5
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 1
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.5
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "nuzzle",
+        "usage": 1
+      },
+      {
+        "name": "dazzlinggleam",
+        "usage": 1
+      },
+      {
+        "name": "voltswitch",
+        "usage": 0.5
+      },
+      {
+        "name": "superfang",
+        "usage": 0.5
+      }
+    ]
+  },
+  "Goodra": {
+    "ability": {
+      "name": "sapsipper",
+      "slug": "sapsipper",
+      "usage": 0.718
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.627
+    },
+    "nature": {
+      "name": "Serious",
+      "usage": 0.618
+    },
+    "spSpread": {
+      "hp": 17,
+      "atk": 12,
+      "def": 17,
+      "spAtk": 13,
+      "spDef": 0,
+      "spe": 7
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.664
+      },
+      {
+        "name": "lifedew",
+        "usage": 0.627
+      },
+      {
+        "name": "sludgebomb",
+        "usage": 0.618
+      },
+      {
+        "name": "breakingswipe",
+        "usage": 0.618
+      }
+    ]
+  },
+  "Klefki": {
+    "ability": {
+      "name": "prankster",
+      "slug": "prankster",
+      "usage": 1
+    },
+    "item": {
+      "name": "lightclay",
+      "slug": "lightclay",
+      "usage": 0.311
+    },
+    "nature": {
+      "name": "Relaxed",
+      "usage": 0.175
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "lightscreen",
+        "usage": 0.699
+      },
+      {
+        "name": "reflect",
+        "usage": 0.67
+      },
+      {
+        "name": "dazzlinggleam",
+        "usage": 0.66
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.485
+      }
+    ]
+  },
+  "Trevenant": {
+    "ability": {
+      "name": "harvest",
+      "slug": "harvest",
+      "usage": 0.969
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.62
+    },
+    "nature": {
+      "name": "Brave",
+      "usage": 0.186
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 2,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "trickroom",
+        "usage": 0.744
+      },
+      {
+        "name": "woodhammer",
+        "usage": 0.512
+      },
+      {
+        "name": "protect",
+        "usage": 0.442
+      },
+      {
+        "name": "hornleech",
+        "usage": 0.426
+      }
+    ]
+  },
+  "Avalugg": {
+    "ability": {
+      "name": "sturdy",
+      "slug": "sturdy",
+      "usage": 0.75
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.5
+    },
+    "nature": {
+      "name": "Relaxed",
+      "usage": 0.5
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 1,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "bodypress",
+        "usage": 0.958
+      },
+      {
+        "name": "protect",
+        "usage": 0.667
+      },
+      {
+        "name": "gyroball",
+        "usage": 0.542
+      },
+      {
+        "name": "iciclecrash",
+        "usage": 0.5
+      }
+    ]
+  },
+  "Noivern": {
+    "ability": {
+      "name": "frisk",
+      "slug": "frisk",
+      "usage": 0.585
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.255
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.229
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "tailwind",
+        "usage": 0.676
+      },
+      {
+        "name": "dracometeor",
+        "usage": 0.553
+      },
+      {
+        "name": "boomburst",
+        "usage": 0.436
+      },
+      {
+        "name": "airslash",
+        "usage": 0.362
+      }
+    ]
+  },
+  "Decidueye": {
+    "ability": {
+      "name": "overgrow",
+      "slug": "overgrow",
+      "usage": 0.8
+    },
+    "item": {
+      "name": "clearamulet",
+      "slug": "clearamulet",
+      "usage": 0.486
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.486
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "leafblade",
+        "usage": 0.829
+      },
+      {
+        "name": "spiritshackle",
+        "usage": 0.771
+      },
+      {
+        "name": "grasspledge",
+        "usage": 0.6
+      },
+      {
+        "name": "protect",
+        "usage": 0.543
+      }
+    ]
+  },
+  "Incineroar": {
+    "ability": {
+      "name": "intimidate",
+      "slug": "intimidate",
+      "usage": 0.994
+    },
+    "item": {
+      "name": "safetygoggles",
+      "slug": "safetygoggles",
+      "usage": 0.526
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.082
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "fakeout",
+        "usage": 0.982
+      },
+      {
+        "name": "knockoff",
+        "usage": 0.909
+      },
+      {
+        "name": "flareblitz",
+        "usage": 0.817
+      },
+      {
+        "name": "partingshot",
+        "usage": 0.767
+      }
+    ]
+  },
+  "Primarina": {
+    "ability": {
+      "name": "liquidvoice",
+      "slug": "liquidvoice",
+      "usage": 0.981
+    },
+    "item": {
+      "name": "throatspray",
+      "slug": "throatspray",
+      "usage": 0.416
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.178
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "hypervoice",
+        "usage": 0.986
+      },
+      {
+        "name": "moonblast",
+        "usage": 0.849
+      },
+      {
+        "name": "protect",
+        "usage": 0.699
+      },
+      {
+        "name": "haze",
+        "usage": 0.322
+      }
+    ]
+  },
+  "Toucannon": {
+    "ability": {
+      "name": "skilllink",
+      "slug": "skilllink",
+      "usage": 1
+    },
+    "item": {
+      "name": "clearamulet",
+      "slug": "clearamulet",
+      "usage": 1
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 1
+    },
+    "spSpread": {
+      "hp": 15,
+      "atk": 24,
+      "def": 16,
+      "spAtk": 0,
+      "spDef": 10,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "beakblast",
+        "usage": 1
+      },
+      {
+        "name": "rockblast",
+        "usage": 1
+      },
+      {
+        "name": "bulletseed",
+        "usage": 1
+      },
+      {
+        "name": "temperflare",
+        "usage": 1
+      }
+    ]
+  },
+  "Crabominable": {
+    "ability": {
+      "name": "ironfist",
+      "slug": "ironfist",
+      "usage": 0.6
+    },
+    "item": {
+      "name": "choiceband",
+      "slug": "choiceband",
+      "usage": 0.6
+    },
+    "nature": {
+      "name": "Hardy",
+      "usage": 0.6
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 1
+    },
+    "moves": [
+      {
+        "name": "drainpunch",
+        "usage": 1
+      },
+      {
+        "name": "icepunch",
+        "usage": 0.6
+      },
+      {
+        "name": "knockoff",
+        "usage": 0.6
+      },
+      {
+        "name": "protect",
+        "usage": 0.6
+      }
+    ]
+  },
+  "Lycanroc": {
+    "ability": {
+      "name": "sandrush",
+      "slug": "sandrush",
+      "usage": 1
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.868
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.429
+    },
+    "spSpread": {
+      "hp": 8,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 24
+    },
+    "moves": [
+      {
+        "name": "rockslide",
+        "usage": 0.978
+      },
+      {
+        "name": "protect",
+        "usage": 0.945
+      },
+      {
+        "name": "endeavor",
+        "usage": 0.868
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.67
+      }
+    ]
+  },
+  "Toxapex": {
+    "ability": {
+      "name": "regenerator",
+      "slug": "regenerator",
+      "usage": 0.585
+    },
+    "item": {
+      "name": "blacksludge",
+      "slug": "blacksludge",
+      "usage": 0.292
+    },
+    "nature": {
+      "name": "Bold",
+      "usage": 0.164
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "banefulbunker",
+        "usage": 0.825
+      },
+      {
+        "name": "recover",
+        "usage": 0.76
+      },
+      {
+        "name": "toxic",
+        "usage": 0.433
+      },
+      {
+        "name": "infestation",
+        "usage": 0.351
+      }
+    ]
+  },
+  "Mudsdale": {
+    "ability": {
+      "name": "innerfocus",
+      "slug": "innerfocus",
+      "usage": 0.528
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.463
+    },
+    "nature": {
+      "name": "Brave",
+      "usage": 0.463
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.697
+      },
+      {
+        "name": "rockslide",
+        "usage": 0.675
+      },
+      {
+        "name": "earthquake",
+        "usage": 0.615
+      },
+      {
+        "name": "heavyslam",
+        "usage": 0.554
+      }
+    ]
+  },
+  "Araquanid": {
+    "ability": {
+      "name": "waterbubble",
+      "slug": "waterbubble",
+      "usage": 0.994
+    },
+    "item": {
+      "name": "mysticwater",
+      "slug": "mysticwater",
+      "usage": 0.39
+    },
+    "nature": {
+      "name": "Brave",
+      "usage": 0.352
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "liquidation",
+        "usage": 0.828
+      },
+      {
+        "name": "protect",
+        "usage": 0.759
+      },
+      {
+        "name": "leechlife",
+        "usage": 0.696
+      },
+      {
+        "name": "wideguard",
+        "usage": 0.616
+      }
+    ]
+  },
+  "Salazzle": {
+    "ability": {
+      "name": "corrosion",
+      "slug": "corrosion",
+      "usage": 0.971
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.8
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.314
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "sludgebomb",
+        "usage": 0.771
+      },
+      {
+        "name": "fakeout",
+        "usage": 0.629
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.429
+      },
+      {
+        "name": "acidspray",
+        "usage": 0.286
+      }
+    ]
+  },
+  "Tsareena": {
+    "ability": {
+      "name": "queenlymajesty",
+      "slug": "queenlymajesty",
+      "usage": 1
+    },
+    "item": {
+      "name": "widelens",
+      "slug": "widelens",
+      "usage": 0.375
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.225
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 15,
+      "def": 7,
+      "spAtk": 0,
+      "spDef": 11,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "tripleaxel",
+        "usage": 0.7
+      },
+      {
+        "name": "highjumpkick",
+        "usage": 0.575
+      },
+      {
+        "name": "powerwhip",
+        "usage": 0.5
+      },
+      {
+        "name": "uturn",
+        "usage": 0.425
+      }
+    ]
+  },
+  "Oranguru": {
+    "ability": {
+      "name": "innerfocus",
+      "slug": "innerfocus",
+      "usage": 0.477
+    },
+    "item": {
+      "name": "mentalherb",
+      "slug": "mentalherb",
+      "usage": 0.515
+    },
+    "nature": {
+      "name": "Sassy",
+      "usage": 0.169
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 1,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "instruct",
+        "usage": 0.945
+      },
+      {
+        "name": "protect",
+        "usage": 0.751
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.624
+      },
+      {
+        "name": "encore",
+        "usage": 0.308
+      }
+    ]
+  },
+  "Passimian": {
+    "ability": {
+      "name": "receiver",
+      "slug": "receiver",
+      "usage": 1
+    },
+    "item": {
+      "name": "weaknesspolicy",
+      "slug": "weaknesspolicy",
+      "usage": 1
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 1
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "closecombat",
+        "usage": 1
+      },
+      {
+        "name": "uturn",
+        "usage": 1
+      },
+      {
+        "name": "acrobatics",
+        "usage": 1
+      },
+      {
+        "name": "bulkup",
+        "usage": 1
+      }
+    ]
+  },
+  "Mimikyu": {
+    "ability": {
+      "name": "disguise",
+      "slug": "disguise",
+      "usage": 1
+    },
+    "item": {
+      "name": "mentalherb",
+      "slug": "mentalherb",
+      "usage": 0.31
+    },
+    "nature": {
+      "name": "Brave",
+      "usage": 0.224
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "playrough",
+        "usage": 0.831
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.78
+      },
+      {
+        "name": "swordsdance",
+        "usage": 0.433
+      },
+      {
+        "name": "protect",
+        "usage": 0.347
+      }
+    ]
+  },
+  "Kommo-o": {
+    "ability": {
+      "name": "overcoat",
+      "slug": "overcoat",
+      "usage": 0.517
+    },
+    "item": {
+      "name": "throatspray",
+      "slug": "throatspray",
+      "usage": 0.579
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.195
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.897
+      },
+      {
+        "name": "clangingscales",
+        "usage": 0.706
+      },
+      {
+        "name": "clangoroussoul",
+        "usage": 0.589
+      },
+      {
+        "name": "aurasphere",
+        "usage": 0.378
+      }
+    ]
+  },
+  "Corviknight": {
+    "ability": {
+      "name": "mirrorarmor",
+      "slug": "mirrorarmor",
+      "usage": 0.937
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.473
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.205
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 10,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 12,
+      "spe": 11
+    },
+    "moves": [
+      {
+        "name": "bravebird",
+        "usage": 0.921
+      },
+      {
+        "name": "tailwind",
+        "usage": 0.758
+      },
+      {
+        "name": "roost",
+        "usage": 0.601
+      },
+      {
+        "name": "protect",
+        "usage": 0.454
+      }
+    ]
+  },
+  "Appletun": {
+    "ability": {
+      "name": "ripen",
+      "slug": "ripen",
+      "usage": 0.8
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.6
+    },
+    "nature": {
+      "name": "Quiet",
+      "usage": 0.4
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 20,
+      "spAtk": 32,
+      "spDef": 13,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "appleacid",
+        "usage": 1
+      },
+      {
+        "name": "dracometeor",
+        "usage": 0.8
+      },
+      {
+        "name": "recycle",
+        "usage": 0.6
+      },
+      {
+        "name": "terablast",
+        "usage": 0.5
+      }
+    ]
+  },
+  "Sandaconda": {
+    "ability": {
+      "name": "sandspit",
+      "slug": "sandspit",
+      "usage": 1
+    },
+    "item": {
+      "name": "enigmaberry",
+      "slug": "enigmaberry",
+      "usage": 0.833
+    },
+    "nature": {
+      "name": "Mild",
+      "usage": 0.833
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 1,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "coil",
+        "usage": 1
+      },
+      {
+        "name": "hurricane",
+        "usage": 0.833
+      },
+      {
+        "name": "lastresort",
+        "usage": 0.833
+      },
+      {
+        "name": "scorchingsands",
+        "usage": 0.833
+      }
+    ]
+  },
+  "Polteageist": {
+    "ability": {
+      "name": "cursedbody",
+      "slug": "cursedbody",
+      "usage": 0.793
+    },
+    "item": {
+      "name": "safetygoggles",
+      "slug": "safetygoggles",
+      "usage": 0.276
+    },
+    "nature": {
+      "name": "Bold",
+      "usage": 0.483
+    },
+    "spSpread": {
+      "hp": 20,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 13,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "shadowball",
+        "usage": 1
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.828
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.517
+      },
+      {
+        "name": "lightscreen",
+        "usage": 0.483
+      }
+    ]
+  },
+  "Hatterene": {
+    "ability": {
+      "name": "magicbounce",
+      "slug": "magicbounce",
+      "usage": 0.98
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.481
+    },
+    "nature": {
+      "name": "Quiet",
+      "usage": 0.347
+    },
+    "spSpread": {
+      "hp": 27,
+      "atk": 0,
+      "def": 6,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "dazzlinggleam",
+        "usage": 0.859
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.845
+      },
+      {
+        "name": "expandingforce",
+        "usage": 0.813
+      },
+      {
+        "name": "protect",
+        "usage": 0.606
+      }
+    ]
+  },
+  "Alcremie": {
+    "ability": {
+      "name": "aromaveil",
+      "slug": "aromaveil",
+      "usage": 0.548
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.206
+    },
+    "nature": {
+      "name": "Calm",
+      "usage": 0.2
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 1,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "decorate",
+        "usage": 0.923
+      },
+      {
+        "name": "dazzlinggleam",
+        "usage": 0.735
+      },
+      {
+        "name": "protect",
+        "usage": 0.406
+      },
+      {
+        "name": "encore",
+        "usage": 0.31
+      }
+    ]
+  },
+  "Dragapult": {
+    "ability": {
+      "name": "clearbody",
+      "slug": "clearbody",
+      "usage": 0.802
+    },
+    "item": {
+      "name": "choiceband",
+      "slug": "choiceband",
+      "usage": 0.635
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.149
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "dragondarts",
+        "usage": 0.85
+      },
+      {
+        "name": "uturn",
+        "usage": 0.752
+      },
+      {
+        "name": "phantomforce",
+        "usage": 0.693
+      },
+      {
+        "name": "outrage",
+        "usage": 0.255
+      }
+    ]
+  },
+  "Wyrdeer": {
+    "ability": {
+      "name": "intimidate",
+      "slug": "intimidate",
+      "usage": 0.531
+    },
+    "item": {
+      "name": "mentalherb",
+      "slug": "mentalherb",
+      "usage": 0.406
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.313
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 0,
+      "def": 16,
+      "spAtk": 3,
+      "spDef": 15,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "trickroom",
+        "usage": 1
+      },
+      {
+        "name": "lightscreen",
+        "usage": 0.375
+      },
+      {
+        "name": "thunderbolt",
+        "usage": 0.375
+      },
+      {
+        "name": "helpinghand",
+        "usage": 0.375
+      }
+    ]
+  },
+  "Kleavor": {
+    "ability": {
+      "name": "sharpness",
+      "slug": "sharpness",
+      "usage": 0.975
+    },
+    "item": {
+      "name": "choicescarf",
+      "slug": "choicescarf",
+      "usage": 0.319
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.212
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "stoneaxe",
+        "usage": 0.944
+      },
+      {
+        "name": "xscissor",
+        "usage": 0.619
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.575
+      },
+      {
+        "name": "protect",
+        "usage": 0.375
+      }
+    ]
+  },
+  "Basculegion": {
+    "ability": {
+      "name": "swiftswim",
+      "slug": "swiftswim",
+      "usage": 0.658
+    },
+    "item": {
+      "name": "choiceband",
+      "slug": "choiceband",
+      "usage": 0.375
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.207
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "lastrespects",
+        "usage": 0.974
+      },
+      {
+        "name": "wavecrash",
+        "usage": 0.829
+      },
+      {
+        "name": "aquajet",
+        "usage": 0.77
+      },
+      {
+        "name": "flipturn",
+        "usage": 0.624
+      }
+    ]
+  },
+  "Sneasler": {
+    "ability": {
+      "name": "unburden",
+      "slug": "unburden",
+      "usage": 0.759
+    },
+    "item": {
+      "name": "grassyseed",
+      "slug": "grassyseed",
+      "usage": 0.311
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.157
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "closecombat",
+        "usage": 0.966
+      },
+      {
+        "name": "direclaw",
+        "usage": 0.908
+      },
+      {
+        "name": "protect",
+        "usage": 0.739
+      },
+      {
+        "name": "throatchop",
+        "usage": 0.373
+      }
+    ]
+  },
+  "Meowscarada": {
+    "ability": {
+      "name": "overgrow",
+      "slug": "overgrow",
+      "usage": 0.592
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.548
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.304
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "flowertrick",
+        "usage": 0.975
+      },
+      {
+        "name": "protect",
+        "usage": 0.713
+      },
+      {
+        "name": "knockoff",
+        "usage": 0.696
+      },
+      {
+        "name": "suckerpunch",
+        "usage": 0.452
+      }
+    ]
+  },
+  "Skeledirge": {
+    "ability": {
+      "name": "unaware",
+      "slug": "unaware",
+      "usage": 1
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.273
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.139
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "torchsong",
+        "usage": 0.952
+      },
+      {
+        "name": "shadowball",
+        "usage": 0.758
+      },
+      {
+        "name": "slackoff",
+        "usage": 0.57
+      },
+      {
+        "name": "protect",
+        "usage": 0.467
+      }
+    ]
+  },
+  "Quaquaval": {
+    "ability": {
+      "name": "moxie",
+      "slug": "moxie",
+      "usage": 0.857
+    },
+    "item": {
+      "name": "clearamulet",
+      "slug": "clearamulet",
+      "usage": 0.364
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.403
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "aquastep",
+        "usage": 1
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.623
+      },
+      {
+        "name": "protect",
+        "usage": 0.532
+      },
+      {
+        "name": "aquajet",
+        "usage": 0.247
+      }
+    ]
+  },
+  "Maushold": {
+    "ability": {
+      "name": "friendguard",
+      "slug": "friendguard",
+      "usage": 0.7
+    },
+    "item": {
+      "name": "widelens",
+      "slug": "widelens",
+      "usage": 0.35
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.141
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "followme",
+        "usage": 0.948
+      },
+      {
+        "name": "protect",
+        "usage": 0.794
+      },
+      {
+        "name": "beatup",
+        "usage": 0.59
+      },
+      {
+        "name": "populationbomb",
+        "usage": 0.446
+      }
+    ]
+  },
+  "Garganacl": {
+    "ability": {
+      "name": "purifyingsalt",
+      "slug": "purifyingsalt",
+      "usage": 0.815
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.477
+    },
+    "nature": {
+      "name": "Impish",
+      "usage": 0.205
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 1,
+      "def": 32,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "saltcure",
+        "usage": 0.977
+      },
+      {
+        "name": "recover",
+        "usage": 0.81
+      },
+      {
+        "name": "protect",
+        "usage": 0.607
+      },
+      {
+        "name": "wideguard",
+        "usage": 0.489
+      }
+    ]
+  },
+  "Armarouge": {
+    "ability": {
+      "name": "flashfire",
+      "slug": "flashfire",
+      "usage": 0.647
+    },
+    "item": {
+      "name": "weaknesspolicy",
+      "slug": "weaknesspolicy",
+      "usage": 0.3
+    },
+    "nature": {
+      "name": "Quiet",
+      "usage": 0.126
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 2,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "expandingforce",
+        "usage": 0.825
+      },
+      {
+        "name": "armorcannon",
+        "usage": 0.691
+      },
+      {
+        "name": "protect",
+        "usage": 0.536
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.364
+      }
+    ]
+  },
+  "Ceruledge": {
+    "ability": {
+      "name": "flashfire",
+      "slug": "flashfire",
+      "usage": 0.735
+    },
+    "item": {
+      "name": "weaknesspolicy",
+      "slug": "weaknesspolicy",
+      "usage": 0.341
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.408
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "bitterblade",
+        "usage": 0.875
+      },
+      {
+        "name": "protect",
+        "usage": 0.69
+      },
+      {
+        "name": "shadowsneak",
+        "usage": 0.47
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.39
+      }
+    ]
+  },
+  "Bellibolt": {
+    "ability": {
+      "name": "electromorphosis",
+      "slug": "electromorphosis",
+      "usage": 1
+    },
+    "item": {
+      "name": "assaultvest",
+      "slug": "assaultvest",
+      "usage": 0.662
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.6
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 19,
+      "spAtk": 7,
+      "spDef": 7,
+      "spe": 1
+    },
+    "moves": [
+      {
+        "name": "muddywater",
+        "usage": 0.754
+      },
+      {
+        "name": "paraboliccharge",
+        "usage": 0.738
+      },
+      {
+        "name": "thunder",
+        "usage": 0.631
+      },
+      {
+        "name": "terablast",
+        "usage": 0.431
+      }
+    ]
+  },
+  "Scovillain": {
+    "ability": {
+      "name": "moody",
+      "slug": "moody",
+      "usage": 0.961
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.553
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.539
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "ragepowder",
+        "usage": 0.987
+      },
+      {
+        "name": "overheat",
+        "usage": 0.816
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.75
+      },
+      {
+        "name": "leafstorm",
+        "usage": 0.526
+      }
+    ]
+  },
+  "Espathra": {
+    "ability": {
+      "name": "speedboost",
+      "slug": "speedboost",
+      "usage": 0.909
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.333
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.2
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.86
+      },
+      {
+        "name": "luminacrash",
+        "usage": 0.739
+      },
+      {
+        "name": "dazzlinggleam",
+        "usage": 0.492
+      },
+      {
+        "name": "expandingforce",
+        "usage": 0.436
+      }
+    ]
+  },
+  "Tinkaton": {
+    "ability": {
+      "name": "moldbreaker",
+      "slug": "moldbreaker",
+      "usage": 0.521
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.287
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.282
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "fakeout",
+        "usage": 0.926
+      },
+      {
+        "name": "gigatonhammer",
+        "usage": 0.798
+      },
+      {
+        "name": "playrough",
+        "usage": 0.633
+      },
+      {
+        "name": "thunderwave",
+        "usage": 0.404
+      }
+    ]
+  },
+  "Palafin": {
+    "ability": {
+      "name": "zerotohero",
+      "slug": "zerotohero",
+      "usage": 1
+    },
+    "item": {
+      "name": "mysticwater",
+      "slug": "mysticwater",
+      "usage": 0.255
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.211
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "jetpunch",
+        "usage": 0.802
+      },
+      {
+        "name": "wavecrash",
+        "usage": 0.802
+      },
+      {
+        "name": "flipturn",
+        "usage": 0.607
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.601
+      }
+    ]
+  },
+  "Orthworm": {
+    "ability": {
+      "name": "eartheater",
+      "slug": "eartheater",
+      "usage": 1
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.5
+    },
+    "nature": {
+      "name": "Impish",
+      "usage": 0.261
+    },
+    "spSpread": {
+      "hp": 26,
+      "atk": 12,
+      "def": 26,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "bodypress",
+        "usage": 1
+      },
+      {
+        "name": "protect",
+        "usage": 0.717
+      },
+      {
+        "name": "shedtail",
+        "usage": 0.674
+      },
+      {
+        "name": "irondefense",
+        "usage": 0.522
+      }
+    ]
+  },
+  "Glimmora": {
+    "ability": {
+      "name": "toxicdebris",
+      "slug": "toxicdebris",
+      "usage": 0.961
+    },
+    "item": {
+      "name": "powerherb",
+      "slug": "powerherb",
+      "usage": 0.647
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.308
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "spikyshield",
+        "usage": 0.814
+      },
+      {
+        "name": "earthpower",
+        "usage": 0.732
+      },
+      {
+        "name": "meteorbeam",
+        "usage": 0.66
+      },
+      {
+        "name": "sludgebomb",
+        "usage": 0.6
+      }
+    ]
+  },
+  "Farigiraf": {
+    "ability": {
+      "name": "armortail",
+      "slug": "armortail",
+      "usage": 0.977
+    },
+    "item": {
+      "name": "throatspray",
+      "slug": "throatspray",
+      "usage": 0.396
+    },
+    "nature": {
+      "name": "Sassy",
+      "usage": 0.076
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 1,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "trickroom",
+        "usage": 0.953
+      },
+      {
+        "name": "psychic",
+        "usage": 0.597
+      },
+      {
+        "name": "hypervoice",
+        "usage": 0.597
+      },
+      {
+        "name": "protect",
+        "usage": 0.587
+      }
+    ]
+  },
+  "Kingambit": {
+    "ability": {
+      "name": "defiant",
+      "slug": "defiant",
+      "usage": 0.914
+    },
+    "item": {
+      "name": "blackglasses",
+      "slug": "blackglasses",
+      "usage": 0.456
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.34
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "kowtowcleave",
+        "usage": 0.908
+      },
+      {
+        "name": "suckerpunch",
+        "usage": 0.905
+      },
+      {
+        "name": "protect",
+        "usage": 0.653
+      },
+      {
+        "name": "swordsdance",
+        "usage": 0.578
+      }
+    ]
+  },
+  "Sinistcha": {
+    "ability": {
+      "name": "hospitality",
+      "slug": "hospitality",
+      "usage": 0.972
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.497
+    },
+    "nature": {
+      "name": "Bold",
+      "usage": 0.102
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 14,
+      "spAtk": 0,
+      "spDef": 19,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "matchagotcha",
+        "usage": 0.979
+      },
+      {
+        "name": "ragepowder",
+        "usage": 0.799
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.594
+      },
+      {
+        "name": "lifedew",
+        "usage": 0.538
+      }
+    ]
+  },
+  "Archaludon": {
+    "ability": {
+      "name": "stamina",
+      "slug": "stamina",
+      "usage": 0.759
+    },
+    "item": {
+      "name": "assaultvest",
+      "slug": "assaultvest",
+      "usage": 0.572
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.089
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "electroshot",
+        "usage": 0.948
+      },
+      {
+        "name": "flashcannon",
+        "usage": 0.751
+      },
+      {
+        "name": "bodypress",
+        "usage": 0.666
+      },
+      {
+        "name": "dragonpulse",
+        "usage": 0.469
+      }
+    ]
+  },
+  "Hydrapple": {
+    "ability": {
+      "name": "regenerator",
+      "slug": "regenerator",
+      "usage": 0.896
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.278
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.253
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "ficklebeam",
+        "usage": 0.701
+      },
+      {
+        "name": "protect",
+        "usage": 0.573
+      },
+      {
+        "name": "gigadrain",
+        "usage": 0.552
+      },
+      {
+        "name": "pollenpuff",
+        "usage": 0.469
+      }
+    ]
+  },
+  "Rotom-Heat": {
+    "ability": {
+      "name": "levitate",
+      "slug": "levitate",
+      "usage": 1
+    },
+    "item": {
+      "name": "choicescarf",
+      "slug": "choicescarf",
+      "usage": 0.344
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.267
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "overheat",
+        "usage": 0.867
+      },
+      {
+        "name": "voltswitch",
+        "usage": 0.633
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.5
+      },
+      {
+        "name": "protect",
+        "usage": 0.467
+      }
+    ]
+  },
+  "Rotom-Wash": {
+    "ability": {
+      "name": "levitate",
+      "slug": "levitate",
+      "usage": 1
+    },
+    "item": {
+      "name": "sitrusberry",
+      "slug": "sitrusberry",
+      "usage": 0.278
+    },
+    "nature": {
+      "name": "Calm",
+      "usage": 0.089
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 6,
+      "spAtk": 8,
+      "spDef": 19,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "hydropump",
+        "usage": 0.867
+      },
+      {
+        "name": "voltswitch",
+        "usage": 0.661
+      },
+      {
+        "name": "protect",
+        "usage": 0.639
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.472
+      }
+    ]
+  },
+  "Rotom-Frost": {
+    "ability": {
+      "name": "levitate",
+      "slug": "levitate",
+      "usage": 1
+    },
+    "item": {
+      "name": "choicescarf",
+      "slug": "choicescarf",
+      "usage": 0.375
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.35
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "blizzard",
+        "usage": 0.975
+      },
+      {
+        "name": "electroweb",
+        "usage": 0.6
+      },
+      {
+        "name": "voltswitch",
+        "usage": 0.5
+      },
+      {
+        "name": "trick",
+        "usage": 0.4
+      }
+    ]
+  },
+  "Rotom-Fan": {
+    "ability": {
+      "name": "levitate",
+      "slug": "levitate",
+      "usage": 1
+    },
+    "item": {
+      "name": "safetygoggles",
+      "slug": "safetygoggles",
+      "usage": 0.909
+    },
+    "nature": {
+      "name": "Modest",
+      "usage": 0.909
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "airslash",
+        "usage": 1
+      },
+      {
+        "name": "helpinghand",
+        "usage": 1
+      },
+      {
+        "name": "electroweb",
+        "usage": 0.909
+      },
+      {
+        "name": "willowisp",
+        "usage": 0.909
+      }
+    ]
+  },
+  "Rotom-Mow": {
+    "ability": {
+      "name": "levitate",
+      "slug": "levitate",
+      "usage": 1
+    },
+    "item": {
+      "name": "covertcloak",
+      "slug": "covertcloak",
+      "usage": 0.318
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.432
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "leafstorm",
+        "usage": 0.864
+      },
+      {
+        "name": "voltswitch",
+        "usage": 0.727
+      },
+      {
+        "name": "protect",
+        "usage": 0.705
+      },
+      {
+        "name": "electroweb",
+        "usage": 0.455
+      }
+    ]
+  },
+  "Raichu-Alola": {
+    "ability": {
+      "name": "surgesurfer",
+      "slug": "surgesurfer",
+      "usage": 1
+    },
+    "item": {
+      "name": "lifeorb",
+      "slug": "lifeorb",
+      "usage": 0.451
+    },
+    "nature": {
+      "name": "Hasty",
+      "usage": 0.462
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "protect",
+        "usage": 0.582
+      },
+      {
+        "name": "expandingforce",
+        "usage": 0.484
+      },
+      {
+        "name": "thunderbolt",
+        "usage": 0.44
+      },
+      {
+        "name": "voltswitch",
+        "usage": 0.363
+      }
+    ]
+  },
+  "Ninetales-Alola": {
+    "ability": {
+      "name": "snowwarning",
+      "slug": "snowwarning",
+      "usage": 0.989
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.393
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.353
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "blizzard",
+        "usage": 0.811
+      },
+      {
+        "name": "auroraveil",
+        "usage": 0.729
+      },
+      {
+        "name": "protect",
+        "usage": 0.65
+      },
+      {
+        "name": "icywind",
+        "usage": 0.412
+      }
+    ]
+  },
+  "Lycanroc-Midnight": {
+    "ability": {
+      "name": "noguard",
+      "slug": "noguard",
+      "usage": 1
+    },
+    "item": {
+      "name": "ejectpack",
+      "slug": "ejectpack",
+      "usage": 0.765
+    },
+    "nature": {
+      "name": "Careful",
+      "usage": 0.765
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 0,
+      "def": 2,
+      "spAtk": 0,
+      "spDef": 32,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "stoneedge",
+        "usage": 1
+      },
+      {
+        "name": "knockoff",
+        "usage": 0.765
+      },
+      {
+        "name": "endure",
+        "usage": 0.765
+      },
+      {
+        "name": "taunt",
+        "usage": 0.765
+      }
+    ]
+  },
+  "Lycanroc-Dusk": {
+    "ability": {
+      "name": "toughclaws",
+      "slug": "toughclaws",
+      "usage": 1
+    },
+    "item": {
+      "name": "choiceband",
+      "slug": "choiceband",
+      "usage": 0.422
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.556
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "accelerock",
+        "usage": 0.978
+      },
+      {
+        "name": "closecombat",
+        "usage": 0.556
+      },
+      {
+        "name": "protect",
+        "usage": 0.556
+      },
+      {
+        "name": "crunch",
+        "usage": 0.422
+      }
+    ]
+  },
+  "Slowbro-Galar": {
+    "ability": {
+      "name": "quickdraw",
+      "slug": "quickdraw",
+      "usage": 0.571
+    },
+    "item": {
+      "name": "quickclaw",
+      "slug": "quickclaw",
+      "usage": 0.357
+    },
+    "nature": {
+      "name": "Bold",
+      "usage": 0.357
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 32,
+      "spAtk": 1,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "shellsidearm",
+        "usage": 1
+      },
+      {
+        "name": "protect",
+        "usage": 0.571
+      },
+      {
+        "name": "expandingforce",
+        "usage": 0.429
+      },
+      {
+        "name": "trickroom",
+        "usage": 0.429
+      }
+    ]
+  },
+  "Slowking-Galar": {
+    "ability": {
+      "name": "regenerator",
+      "slug": "regenerator",
+      "usage": 0.757
+    },
+    "item": {
+      "name": "roomservice",
+      "slug": "roomservice",
+      "usage": 0.171
+    },
+    "nature": {
+      "name": "Quiet",
+      "usage": 0.36
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "trickroom",
+        "usage": 0.712
+      },
+      {
+        "name": "sludgebomb",
+        "usage": 0.45
+      },
+      {
+        "name": "chillyreception",
+        "usage": 0.405
+      },
+      {
+        "name": "protect",
+        "usage": 0.333
+      }
+    ]
+  },
+  "Arcanine-Hisui": {
+    "ability": {
+      "name": "intimidate",
+      "slug": "intimidate",
+      "usage": 0.679
+    },
+    "item": {
+      "name": "choiceband",
+      "slug": "choiceband",
+      "usage": 0.267
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.165
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "flareblitz",
+        "usage": 0.83
+      },
+      {
+        "name": "rockslide",
+        "usage": 0.652
+      },
+      {
+        "name": "extremespeed",
+        "usage": 0.549
+      },
+      {
+        "name": "protect",
+        "usage": 0.538
+      }
+    ]
+  },
+  "Typhlosion-Hisui": {
+    "ability": {
+      "name": "blaze",
+      "slug": "blaze",
+      "usage": 0.712
+    },
+    "item": {
+      "name": "choicescarf",
+      "slug": "choicescarf",
+      "usage": 0.449
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.371
+    },
+    "spSpread": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 0,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "eruption",
+        "usage": 0.964
+      },
+      {
+        "name": "shadowball",
+        "usage": 0.912
+      },
+      {
+        "name": "heatwave",
+        "usage": 0.825
+      },
+      {
+        "name": "overheat",
+        "usage": 0.467
+      }
+    ]
+  },
+  "Samurott-Hisui": {
+    "ability": {
+      "name": "sharpness",
+      "slug": "sharpness",
+      "usage": 0.937
+    },
+    "item": {
+      "name": "clearamulet",
+      "slug": "clearamulet",
+      "usage": 0.203
+    },
+    "nature": {
+      "name": "Jolly",
+      "usage": 0.266
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "aquacutter",
+        "usage": 0.727
+      },
+      {
+        "name": "ceaselessedge",
+        "usage": 0.587
+      },
+      {
+        "name": "sacredsword",
+        "usage": 0.566
+      },
+      {
+        "name": "flipturn",
+        "usage": 0.371
+      }
+    ]
+  },
+  "Zoroark-Hisui": {
+    "ability": {
+      "name": "illusion",
+      "slug": "illusion",
+      "usage": 1
+    },
+    "item": {
+      "name": "focussash",
+      "slug": "focussash",
+      "usage": 0.485
+    },
+    "nature": {
+      "name": "Timid",
+      "usage": 0.345
+    },
+    "spSpread": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spAtk": 32,
+      "spDef": 1,
+      "spe": 32
+    },
+    "moves": [
+      {
+        "name": "hypervoice",
+        "usage": 0.534
+      },
+      {
+        "name": "shadowball",
+        "usage": 0.524
+      },
+      {
+        "name": "icywind",
+        "usage": 0.489
+      },
+      {
+        "name": "bittermalice",
+        "usage": 0.473
+      }
+    ]
+  },
+  "Goodra-Hisui": {
+    "ability": {
+      "name": "sapsipper",
+      "slug": "sapsipper",
+      "usage": 0.676
+    },
+    "item": {
+      "name": "leftovers",
+      "slug": "leftovers",
+      "usage": 0.344
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.125
+    },
+    "spSpread": {
+      "hp": 31,
+      "atk": 32,
+      "def": 0,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "bodypress",
+        "usage": 0.461
+      },
+      {
+        "name": "heavyslam",
+        "usage": 0.441
+      },
+      {
+        "name": "dracometeor",
+        "usage": 0.348
+      },
+      {
+        "name": "protect",
+        "usage": 0.285
+      }
+    ]
+  },
+  "Avalugg-Hisui": {
+    "ability": {
+      "name": "sturdy",
+      "slug": "sturdy",
+      "usage": 0.78
+    },
+    "item": {
+      "name": "weaknesspolicy",
+      "slug": "weaknesspolicy",
+      "usage": 0.26
+    },
+    "nature": {
+      "name": "Brave",
+      "usage": 0.28
+    },
+    "spSpread": {
+      "hp": 32,
+      "atk": 32,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 0,
+      "spe": 0
+    },
+    "moves": [
+      {
+        "name": "bodypress",
+        "usage": 0.82
+      },
+      {
+        "name": "rockslide",
+        "usage": 0.74
+      },
+      {
+        "name": "wideguard",
+        "usage": 0.66
+      },
+      {
+        "name": "icespinner",
+        "usage": 0.32
+      }
+    ]
+  },
+  "Decidueye-Hisui": {
+    "ability": {
+      "name": "scrappy",
+      "slug": "scrappy",
+      "usage": 0.891
+    },
+    "item": {
+      "name": "razorclaw",
+      "slug": "razorclaw",
+      "usage": 0.218
+    },
+    "nature": {
+      "name": "Adamant",
+      "usage": 0.147
+    },
+    "spSpread": {
+      "hp": 5,
+      "atk": 32,
+      "def": 1,
+      "spAtk": 0,
+      "spDef": 1,
+      "spe": 27
+    },
+    "moves": [
+      {
+        "name": "triplearrows",
+        "usage": 0.877
+      },
+      {
+        "name": "leafblade",
+        "usage": 0.701
+      },
+      {
+        "name": "protect",
+        "usage": 0.559
+      },
+      {
+        "name": "bravebird",
+        "usage": 0.336
+      }
+    ]
+  }
+}

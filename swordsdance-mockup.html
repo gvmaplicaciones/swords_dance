@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>SwordsDance — Mockup v4</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:    #080808;
+    --bg2:   #0f0f0f;
+    --bg3:   #181818;
+    --bg4:   #242424;
+    --red:   #ff2244;
+    --red2:  #cc1133;
+    --gold:  #ffe000;
+    --blue:  #4fc3f7;
+    --white: #ffffff;
+    --off:   #cccccc;
+    --muted: #999999;
+    --px: 'Press Start 2P', monospace;
+    --mn: 'DM Mono', monospace;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body {
+    background: #030303;
+    display: flex; justify-content: center; align-items: flex-start;
+    min-height: 100vh; padding: 40px 20px;
+    font-family: var(--px); color: var(--white);
+    gap: 24px; flex-wrap: wrap;
+  }
+
+  /* PHONE WRAPPER */
+  .phone-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .phone-label {
+    font-family: var(--px); font-size: 7px; color: #ff2244;
+    letter-spacing: 2px; text-shadow: 0 0 8px #ff2244;
+  }
+  .phone {
+    width: 320px; height: 692px;
+    background: var(--bg);
+    border-radius: 36px; overflow: hidden; position: relative;
+    box-shadow: 0 0 0 1px rgba(255,34,68,0.2), 0 0 30px rgba(255,34,68,0.06), 0 30px 80px rgba(0,0,0,0.95);
+    flex-shrink: 0;
+  }
+  .phone::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.12) 3px, rgba(0,0,0,0.12) 4px);
+    pointer-events: none; z-index: 999; border-radius: 36px;
+  }
+  .screen {
+    display: flex; flex-direction: column;
+    height: 100%; overflow-y: auto; overflow-x: hidden;
+    scrollbar-width: none; background: var(--bg);
+  }
+  .screen::-webkit-scrollbar { display: none; }
+
+  /* NAV */
+  .nav {
+    position: sticky; bottom: 0; background: var(--bg);
+    border-top: 2px solid var(--red);
+    box-shadow: 0 -4px 16px rgba(255,34,68,0.12);
+    display: flex; padding: 8px 0 20px; z-index: 100; margin-top: auto;
+  }
+  .nav-btn { flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; cursor:pointer; }
+  .nav-btn .icon { font-size: 16px; }
+  .nav-btn .lbl { font-size: 5px; color: var(--muted); font-family: var(--px); }
+  .nav-btn.active .lbl { color: var(--red); text-shadow: 0 0 6px var(--red); }
+  .nav-btn.active .icon { filter: drop-shadow(0 0 5px var(--red)); }
+
+  /* HEADER COMÚN */
+  .hdr {
+    padding: 44px 14px 10px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid var(--bg3);
+  }
+  .hdr-title { font-family: var(--px); font-size: 11px; letter-spacing: 1px; }
+  .hdr-btn {
+    background: var(--bg3); border: 2px solid var(--red); color: var(--red);
+    font-family: var(--px); font-size: 5px; padding: 6px 10px; cursor: pointer;
+    box-shadow: 2px 2px 0 var(--red2); letter-spacing: 0.3px;
+  }
+  .back-btn {
+    background: var(--bg3); border: 2px solid var(--bg4);
+    font-family: var(--px); font-size: 9px;
+    width: 30px; height: 30px;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+  }
+
+  /* ══ HOME ══ */
+  .logo-area { display:flex; align-items:center; gap:8px; }
+  .logo-icon {
+    width:32px; height:32px; background:var(--bg2);
+    border:2px solid var(--red);
+    display:flex; align-items:center; justify-content:center; font-size:16px;
+    box-shadow: 0 0 10px rgba(255,34,68,0.3);
+  }
+  .logo-text { font-family:var(--px); font-size:9px; color:var(--red); text-shadow:0 0 8px var(--red); }
+  .gold-badge {
+    background:var(--bg2); border:2px solid var(--gold); color:var(--gold);
+    font-family:var(--px); font-size:5px; padding:5px 8px;
+    text-shadow:0 0 5px var(--gold); box-shadow:2px 2px 0 rgba(255,224,0,0.3);
+  }
+
+  .hero {
+    margin:12px 14px; background:var(--bg2);
+    border:2px solid var(--red); padding:18px 16px;
+    box-shadow:0 0 20px rgba(255,34,68,0.08), inset 0 0 20px rgba(255,34,68,0.02);
+  }
+  .hero-eye { font-family:var(--px); font-size:5px; color:var(--muted); letter-spacing:2px; margin-bottom:8px; }
+  .hero-title { font-family:var(--px); font-size:13px; line-height:1.8; margin-bottom:6px; }
+  .hero-title span { color:var(--red); text-shadow:0 0 10px var(--red); }
+  .hero-sub { font-family:var(--px); font-size:5px; color:var(--muted); margin-bottom:16px; line-height:2.2; }
+  @keyframes blink { 0%,49%{opacity:1}50%,100%{opacity:0} }
+  .blink { animation:blink 1s infinite; color:var(--red); }
+  .cta {
+    background:var(--red); color:var(--bg);
+    font-family:var(--px); font-size:7px;
+    padding:10px 14px; border:none; cursor:pointer;
+    display:inline-flex; align-items:center; gap:6px;
+    box-shadow:3px 3px 0 var(--red2);
+  }
+
+  .sec-lbl {
+    font-family:var(--px); font-size:5px; color:var(--muted); letter-spacing:2px;
+    padding:12px 14px 6px; display:flex; align-items:center; gap:6px;
+  }
+  .sec-lbl::after { content:''; flex:1; height:1px; background:var(--bg3); }
+
+  .acard {
+    margin:0 14px 8px; background:var(--bg2); border:2px solid var(--bg3);
+    padding:10px 12px; display:flex; align-items:center; gap:10px;
+    cursor:pointer; transition:border-color 0.1s; position:relative;
+  }
+  .acard:hover { border-color:var(--red); }
+  .acard::after { content:'▶'; position:absolute; right:12px; color:var(--muted); font-size:7px; font-family:var(--px); }
+  .acard-icon { width:38px; height:38px; background:var(--bg3); border:1px solid var(--bg4); display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; }
+  .acard h3 { font-family:var(--px); font-size:7px; margin-bottom:5px; color:var(--white); }
+  .acard p { font-family:var(--mn); font-size:10px; color:var(--muted); line-height:1.5; }
+
+  .how-box { margin:4px 14px 14px; background:var(--bg2); border:1px solid var(--bg3); padding:12px 14px; }
+  .how-lbl { font-family:var(--px); font-size:5px; color:var(--muted); margin-bottom:10px; letter-spacing:1px; }
+  .steps { display:flex; gap:4px; align-items:center; }
+  .step { flex:1; text-align:center; font-family:var(--px); font-size:5px; color:var(--muted); line-height:2; }
+  .step .si { font-size:16px; display:block; margin-bottom:4px; }
+  .sarr { color:var(--red); font-size:10px; flex-shrink:0; }
+
+  /* ══ BATALLA ══ */
+  .team-sec { padding:10px 14px 0; }
+  .rival-sec { padding:4px 14px 0; }
+  .tlbl {
+    font-family:var(--px); font-size:6px; letter-spacing:2px; margin-bottom:8px;
+    display:flex; align-items:center; gap:6px;
+  }
+  .tlbl::before { content:'▶'; font-size:5px; }
+  .tlbl::after { content:''; flex:1; height:1px; background:currentColor; opacity:0.15; }
+  .tlbl.my { color:var(--blue); }
+  .tlbl.rival { color:var(--red); }
+
+  .pgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:5px; }
+  .pc {
+    background:var(--bg2); border:2px solid var(--bg3);
+    padding:8px 5px 7px;
+    display:flex; flex-direction:column; align-items:center; gap:4px;
+    cursor:pointer; position:relative; transition:all 0.1s;
+  }
+  .pc:active { transform:scale(0.97); }
+  .pc.good { border-color:var(--red); box-shadow:0 0 8px rgba(255,34,68,0.2); }
+  .pc.neutral { border-color:var(--gold); box-shadow:0 0 6px rgba(255,224,0,0.15); }
+  .pc.bad { border-color:var(--bg4); }
+  .pc.rc { background:#0e0808; border-color:rgba(255,34,68,0.12); }
+  .pc.sel { border-color:var(--red) !important; box-shadow:0 0 12px rgba(255,34,68,0.3) !important; }
+  .psph { width:50px; height:50px; background:var(--bg3); border:1px solid var(--bg4); display:flex; align-items:center; justify-content:center; font-size:22px; }
+  .pname { font-family:var(--px); font-size:5px; text-align:center; line-height:1.5; color:var(--white); }
+  .pitem { position:absolute; bottom:5px; left:4px; font-size:10px; }
+  .pedit { position:absolute; top:3px; right:3px; font-size:9px; color:var(--red); opacity:0.6; }
+  .pplus { width:100%; min-height:92px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; border:2px dashed rgba(255,34,68,0.2); color:var(--red); opacity:0.35; }
+  .pplus .pp { font-size:18px; }
+  .pplus .pt { font-family:var(--px); font-size:5px; }
+
+  .mleg { display:flex; justify-content:center; gap:10px; padding:6px 0 2px; font-family:var(--px); font-size:5px; color:var(--muted); }
+  .bhint { text-align:center; font-family:var(--px); font-size:5px; color:var(--muted); padding:5px 14px 2px; }
+
+  /* ══ VS ══ */
+  .vs-hdr { padding:44px 14px 10px; display:flex; align-items:center; gap:8px; border-bottom:1px solid var(--bg3); }
+  .vs-title { font-family:var(--px); font-size:14px; color:var(--red); text-shadow:0 0 12px var(--red); flex:1; text-align:center; letter-spacing:6px; }
+  .rotar { background:var(--bg3); border:2px solid var(--bg4); color:var(--muted); font-family:var(--px); font-size:5px; padding:6px 8px; cursor:pointer; }
+
+  .vs-bar { display:flex; align-items:flex-end; justify-content:space-between; padding:12px 14px 0; position:relative; }
+  .vs-center { position:absolute; left:50%; transform:translateX(-50%); bottom:6px; font-family:var(--px); font-size:14px; color:var(--red); text-shadow:0 0 12px var(--red); }
+  .vs-poke { display:flex; flex-direction:column; align-items:center; gap:4px; width:40%; }
+  .vs-sph { width:72px; height:72px; background:var(--bg2); border:2px solid var(--bg3); display:flex; align-items:center; justify-content:center; font-size:32px; }
+  .vs-name { font-family:var(--px); font-size:6px; text-align:center; color:var(--white); }
+  .vs-types { display:flex; gap:3px; flex-wrap:wrap; justify-content:center; }
+  .tp { font-family:var(--px); font-size:4px; padding:2px 5px; }
+  .t-fire  { background:#500000; color:#ff8888; border:1px solid #aa0000; }
+  .t-psych { background:#1a0020; color:#cc66ff; border:1px solid #660099; }
+  .t-dark  { background:#111; color:#888; border:1px solid #333; }
+  .t-steel { background:#101520; color:#88aacc; border:1px solid #334; }
+  .t-water { background:#001830; color:#66aaff; border:1px solid #0044aa; }
+  .t-fairy { background:#300020; color:#ff88cc; border:1px solid #aa0066; }
+  .t-ghost { background:#1a0030; color:#aa66ff; border:1px solid #440088; }
+  .t-elec  { background:#302000; color:#ffdd44; border:1px solid #aa7700; }
+  .t-grass { background:#0a2000; color:#66dd44; border:1px solid #226600; }
+  .t-normal{ background:#222; color:#aaa; border:1px solid #555; }
+
+  .stbox { margin:10px 14px; background:var(--bg2); border:2px solid var(--bg3); }
+  .sth { display:grid; grid-template-columns:1fr 52px 1fr; padding:7px 10px; background:var(--bg3); border-bottom:1px solid var(--bg4); font-family:var(--px); font-size:5px; letter-spacing:1px; }
+  .h-yo { color:var(--blue); }
+  .h-st { color:var(--muted); text-align:center; }
+  .h-rv { color:var(--red); text-align:right; }
+  .strow { display:grid; grid-template-columns:1fr 52px 1fr; padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.03); align-items:center; }
+  .sv { font-family:var(--mn); font-size:14px; font-weight:500; }
+  .sv.win { color:var(--red); text-shadow:0 0 5px rgba(255,34,68,0.4); }
+  .sv.lose { color:var(--muted); }
+  .sv.r { text-align:right; }
+  .sn { font-family:var(--px); font-size:5px; color:var(--muted); text-align:center; }
+
+  .trow { margin:0 14px 8px; background:var(--bg2); border:2px solid var(--bg3); padding:10px 12px; display:flex; align-items:center; justify-content:space-between; }
+  .trow h4 { font-family:var(--px); font-size:6px; margin-bottom:4px; color:var(--white); }
+  .trow p  { font-family:var(--px); font-size:5px; color:var(--muted); }
+  .toggle { width:40px; height:20px; background:var(--red); border:2px solid var(--red2); position:relative; cursor:pointer; box-shadow:0 0 6px rgba(255,34,68,0.3); }
+  .toggle::after { content:''; position:absolute; width:12px; height:12px; background:var(--bg); top:2px; right:2px; }
+
+  .calcbox { margin:0 14px; background:var(--bg2); border:2px solid var(--bg3); }
+  .ch { padding:10px 12px; }
+  .ch + .ch { border-top:2px solid var(--bg3); }
+  .clbl { font-family:var(--px); font-size:5px; letter-spacing:1px; margin-bottom:7px; }
+  .clbl.atk { color:var(--blue); }
+  .clbl.def { color:var(--red); }
+  .mrow { background:var(--bg3); border:1px solid var(--bg4); padding:8px 10px; display:flex; align-items:center; justify-content:space-between; cursor:pointer; margin-bottom:6px; }
+  .ml { display:flex; align-items:center; gap:7px; }
+  .mt { font-size:12px; }
+  .mi h4 { font-family:var(--px); font-size:5px; margin-bottom:3px; color:var(--white); }
+  .mi p { font-family:var(--mn); font-size:9px; color:var(--muted); }
+  .marr { font-family:var(--px); font-size:7px; color:var(--muted); }
+  .rrow { display:flex; align-items:center; justify-content:space-between; padding:8px 10px; background:var(--bg3); }
+  .rpct { font-family:var(--mn); font-size:15px; font-weight:500; }
+  .rverd { font-family:var(--px); font-size:6px; padding:5px 8px; }
+  .v-kill { border:1px solid #00ff88; color:#00ff88; background:rgba(0,255,136,0.08); }
+  .v-no   { border:1px solid var(--red); color:var(--red); background:rgba(255,34,68,0.08); }
+  .v-ok   { border:1px solid var(--blue); color:var(--blue); background:rgba(79,195,247,0.08); }
+
+  .stbtns { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:8px 14px 0; }
+  .stb { padding:11px; text-align:center; font-family:var(--px); font-size:5px; cursor:pointer; letter-spacing:0.3px; }
+  .stb.my    { background:rgba(79,195,247,0.06); border:2px solid var(--blue); color:var(--blue); box-shadow:2px 2px 0 rgba(79,195,247,0.2); }
+  .stb.rival { background:rgba(255,34,68,0.06); border:2px solid var(--red); color:var(--red); box-shadow:2px 2px 0 rgba(255,34,68,0.2); }
+
+  /* ══ ESCANEAR ══ */
+  .scan-screen { display:flex; flex-direction:column; align-items:center; height:100%; }
+  .scan-area {
+    flex:1; width:100%; background:#000;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    position:relative; gap:16px;
+  }
+  .scan-frame {
+    width:220px; height:160px; position:relative;
+    border:2px solid rgba(255,34,68,0.4);
+  }
+  .scan-frame::before, .scan-frame::after,
+  .sf-tl, .sf-tr, .sf-bl, .sf-br {
+    content:''; position:absolute; width:20px; height:20px;
+    border-color:var(--red); border-style:solid;
+  }
+  .scan-frame::before { top:-2px; left:-2px; border-width:3px 0 0 3px; }
+  .scan-frame::after  { top:-2px; right:-2px; border-width:3px 3px 0 0; }
+  .sf-bl { bottom:-2px; left:-2px; border-width:0 0 3px 3px; }
+  .sf-br { bottom:-2px; right:-2px; border-width:0 3px 3px 0; }
+  @keyframes scanline { 0%{top:0} 100%{top:100%} }
+  .scan-line { position:absolute; left:0; right:0; height:2px; background:var(--red); opacity:0.6; box-shadow:0 0 8px var(--red); animation:scanline 2s linear infinite; }
+  .scan-txt { font-family:var(--px); font-size:6px; color:var(--muted); text-align:center; line-height:2; }
+  .scan-cta {
+    width:64px; height:64px; border-radius:50%;
+    background:var(--red); border:3px solid var(--white);
+    display:flex; align-items:center; justify-content:center;
+    font-size:24px; cursor:pointer;
+    box-shadow:0 0 20px rgba(255,34,68,0.4);
+    margin-bottom:24px;
+  }
+
+  /* ══ MI EQUIPO ══ */
+  .team-list { padding:0 14px; display:flex; flex-direction:column; gap:8px; }
+  .tcard {
+    background:var(--bg2); border:2px solid var(--bg3);
+    padding:12px 14px; display:flex; align-items:center; gap:12px;
+    cursor:pointer; transition:border-color 0.1s;
+  }
+  .tcard:hover { border-color:var(--red); }
+  .tcard-sph { width:52px; height:52px; background:var(--bg3); border:1px solid var(--bg4); display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0; }
+  .tcard-info { flex:1; }
+  .tcard-info h3 { font-family:var(--px); font-size:8px; margin-bottom:6px; color:var(--white); }
+  .tcard-info .tags { display:flex; gap:4px; flex-wrap:wrap; }
+  .tag { font-family:var(--px); font-size:5px; padding:3px 6px; background:var(--bg3); border:1px solid var(--bg4); color:var(--muted); }
+  .tag.item { border-color:rgba(255,224,0,0.3); color:var(--gold); }
+  .tcard-edit { font-size:14px; color:var(--muted); flex-shrink:0; }
+  .import-btn {
+    margin:0 14px; background:var(--bg2); border:2px solid var(--red);
+    color:var(--red); font-family:var(--px); font-size:7px;
+    padding:12px; text-align:center; cursor:pointer;
+    box-shadow:3px 3px 0 var(--red2); letter-spacing:0.3px;
+  }
+
+  /* ══ EDITAR POKEMON ══ */
+  .edit-header { padding:44px 14px 10px; display:flex; align-items:center; gap:10px; border-bottom:1px solid var(--bg3); }
+  .edit-title { font-family:var(--px); font-size:9px; flex:1; text-align:center; color:var(--white); }
+  .edit-save { background:var(--red); color:var(--bg); font-family:var(--px); font-size:6px; padding:7px 12px; border:none; cursor:pointer; box-shadow:2px 2px 0 var(--red2); }
+
+  .edit-body { padding:12px 14px; display:flex; flex-direction:column; gap:10px; }
+  .field-lbl { font-family:var(--px); font-size:6px; color:var(--muted); margin-bottom:5px; letter-spacing:1px; }
+  .field-val { font-family:var(--px); font-size:8px; color:var(--white); margin-bottom:3px; }
+
+  .ability-btns { display:flex; gap:6px; flex-wrap:wrap; }
+  .abtn { background:var(--bg3); border:2px solid var(--bg4); color:var(--muted); font-family:var(--px); font-size:6px; padding:7px 10px; cursor:pointer; }
+  .abtn.active { border-color:var(--red); color:var(--white); box-shadow:2px 2px 0 var(--red2); }
+
+  .nature-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; }
+  .nbtn { background:var(--bg3); border:1px solid var(--bg4); color:var(--muted); font-family:var(--px); font-size:5px; padding:6px 4px; text-align:center; cursor:pointer; }
+  .nbtn.active { border-color:var(--red); color:var(--white); }
+
+  .sp-sliders { display:flex; flex-direction:column; gap:6px; }
+  .sp-row { display:flex; align-items:center; gap:8px; }
+  .sp-lbl { font-family:var(--px); font-size:5px; color:var(--muted); width:28px; }
+  .sp-bar { flex:1; height:6px; background:var(--bg3); border:1px solid var(--bg4); position:relative; }
+  .sp-fill { height:100%; background:var(--red); width:60%; }
+  .sp-val { font-family:var(--mn); font-size:11px; color:var(--white); width:20px; text-align:right; }
+
+  .moves-grid { display:grid; grid-template-columns:1fr 1fr; gap:5px; }
+  .move-slot { background:var(--bg3); border:2px solid var(--bg4); padding:8px 10px; cursor:pointer; }
+  .move-slot h4 { font-family:var(--px); font-size:6px; margin-bottom:3px; color:var(--white); }
+  .move-slot p  { font-family:var(--mn); font-size:9px; color:var(--muted); }
+  .move-slot.empty { border-style:dashed; border-color:rgba(255,34,68,0.2); display:flex; align-items:center; justify-content:center; min-height:48px; }
+  .move-slot.empty span { font-family:var(--px); font-size:5px; color:rgba(255,34,68,0.3); }
+
+  .mockup-note {
+    position:fixed; top:12px; left:50%; transform:translateX(-50%);
+    background:rgba(255,34,68,0.08); border:1px solid rgba(255,34,68,0.2);
+    color:var(--red); font-family:var(--px); font-size:6px;
+    padding:7px 14px; white-space:nowrap; letter-spacing:1px; z-index:9999;
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-note">▶ SWORDSDANCE MOCKUP v4 — 5 PANTALLAS</div>
+
+<!-- ══ HOME ══ -->
+<div class="phone-wrap">
+  <div class="phone-label">HOME</div>
+  <div class="phone">
+    <div class="screen">
+      <div class="hdr">
+        <div class="logo-area">
+          <div class="logo-icon">⚔</div>
+          <span class="logo-text">SWORDS<br>DANCE</span>
+        </div>
+        <div class="gold-badge">★ PREMIUM</div>
+      </div>
+      <div class="hero">
+        <div class="hero-eye">POKEMON CHAMPIONS</div>
+        <div class="hero-title">TU <span>VENTAJA</span><br>EN BATALLA</div>
+        <div class="hero-sub">ESCANEA · ANALIZA · GANA<span class="blink">_</span></div>
+        <button class="cta">► ESCANEAR RIVAL</button>
+      </div>
+      <div class="sec-lbl">MENU PRINCIPAL</div>
+      <div class="acard">
+        <div class="acard-icon">📷</div>
+        <div><h3>ESCANEAR RIVAL</h3><p>Identifica el equipo rival con IA</p></div>
+      </div>
+      <div class="acard">
+        <div class="acard-icon">⚔️</div>
+        <div><h3>PANTALLA BATALLA</h3><p>Compara stats y calcula daño</p></div>
+      </div>
+      <div class="acard">
+        <div class="acard-icon">🛡️</div>
+        <div><h3>MI EQUIPO</h3><p>Edita e importa Pokepaste</p></div>
+      </div>
+      <div class="sec-lbl">COMO FUNCIONA</div>
+      <div class="how-box">
+        <div class="how-lbl">► FLUJO DE BATALLA</div>
+        <div class="steps">
+          <div class="step"><span class="si">📷</span>ESCANEAR</div>
+          <div class="sarr">▶</div>
+          <div class="step"><span class="si">🔍</span>ANALIZAR</div>
+          <div class="sarr">▶</div>
+          <div class="step"><span class="si">⚔️</span>GANAR</div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav-btn active"><span class="icon">🏠</span><span class="lbl">HOME</span></div>
+        <div class="nav-btn"><span class="icon">📷</span><span class="lbl">SCAN</span></div>
+        <div class="nav-btn"><span class="icon">⚔️</span><span class="lbl">BATALLA</span></div>
+        <div class="nav-btn"><span class="icon">🛡️</span><span class="lbl">EQUIPO</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ESCANEAR ══ -->
+<div class="phone-wrap">
+  <div class="phone-label">ESCANEAR</div>
+  <div class="phone">
+    <div class="screen">
+      <div class="hdr">
+        <span class="hdr-title">ESCANEAR</span>
+      </div>
+      <div class="scan-area" style="flex:1">
+        <div style="font-family:var(--px);font-size:6px;color:var(--muted);text-align:center;line-height:2;padding:0 20px">
+          ENFOCA LA PANTALLA<br>DE LA SWITCH<br>Y PULSA EL BOTÓN
+        </div>
+        <div class="scan-frame">
+          <div class="sf-bl"></div>
+          <div class="sf-br"></div>
+          <div class="scan-line"></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:10px;color:rgba(255,34,68,0.2);font-family:var(--px);text-align:center;font-size:6px;line-height:2">ENCUADRA<br>EL EQUIPO<br>RIVAL</div>
+        </div>
+        <div style="font-family:var(--px);font-size:5px;color:rgba(255,34,68,0.4);text-align:center;line-height:2">
+          IA · GEMINI FLASH LITE<br>~1 SEGUNDO
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:16px 0 0;background:var(--bg)">
+        <div class="scan-cta">📷</div>
+      </div>
+      <div class="nav">
+        <div class="nav-btn"><span class="icon">🏠</span><span class="lbl">HOME</span></div>
+        <div class="nav-btn active"><span class="icon">📷</span><span class="lbl">SCAN</span></div>
+        <div class="nav-btn"><span class="icon">⚔️</span><span class="lbl">BATALLA</span></div>
+        <div class="nav-btn"><span class="icon">🛡️</span><span class="lbl">EQUIPO</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ BATALLA ══ -->
+<div class="phone-wrap">
+  <div class="phone-label">BATALLA</div>
+  <div class="phone">
+    <div class="screen">
+      <div class="hdr">
+        <span class="hdr-title">BATALLA</span>
+        <div class="hdr-btn">📷 SCAN</div>
+      </div>
+      <div class="team-sec">
+        <div class="tlbl my">MI EQUIPO</div>
+        <div class="pgrid">
+          <div class="pc good"><div class="psph">🦊</div><span class="pname">DELPHOX</span><div class="pitem">🔮</div></div>
+          <div class="pc neutral"><div class="psph">👻</div><span class="pname">MIMIKYU</span><div class="pitem">🍃</div></div>
+          <div class="pc good"><div class="psph">🐦</div><span class="pname">CORVI-<br>KNIGHT</span><div class="pitem">🍖</div></div>
+          <div class="pc good"><div class="psph">💎</div><span class="pname">GLIMMORA</span><div class="pitem">🎗️</div></div>
+          <div class="pc neutral"><div class="psph">🌊</div><span class="pname">PRIMARINA</span><div class="pitem">🌱</div></div>
+          <div class="pc good"><div class="psph">🐉</div><span class="pname">DRAGA-<br>PULT</span><div class="pitem">💨</div></div>
+        </div>
+        <div class="mleg"><span>🔴 BUENO</span><span>🟡 NEUTRO</span><span>⬜ MALO</span></div>
+      </div>
+      <div class="bhint">▼ SELECCIONA UNO DE CADA EQUIPO ▼</div>
+      <div class="rival-sec">
+        <div class="tlbl rival">EQUIPO RIVAL</div>
+        <div class="pgrid">
+          <div class="pc rc"><div class="psph">🐰</div><span class="pname">CLEFABLE</span><div class="pitem">🔮</div><div class="pedit">✏</div></div>
+          <div class="pc rc sel"><div class="psph">⚔️</div><span class="pname">KINGAMBIT</span><div class="pitem">🍃</div><div class="pedit">✏</div></div>
+          <div class="pc rc"><div class="psph">🦈</div><span class="pname">GARCHOMP</span><div class="pitem">🪨</div><div class="pedit">✏</div></div>
+          <div class="pc rc"><div class="psph">🌀</div><span class="pname">ROTOM-W</span><div class="pitem">🌿</div><div class="pedit">✏</div></div>
+          <div class="pc rc"><div class="psph">🌊</div><span class="pname">PRIMARINA</span><div class="pitem">🌱</div><div class="pedit">✏</div></div>
+          <div class="pc rc"><div class="pplus"><span class="pp">+</span><span class="pt">AÑADIR</span></div></div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav-btn"><span class="icon">🏠</span><span class="lbl">HOME</span></div>
+        <div class="nav-btn"><span class="icon">📷</span><span class="lbl">SCAN</span></div>
+        <div class="nav-btn active"><span class="icon">⚔️</span><span class="lbl">BATALLA</span></div>
+        <div class="nav-btn"><span class="icon">🛡️</span><span class="lbl">EQUIPO</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ VS ══ -->
+<div class="phone-wrap">
+  <div class="phone-label">VS / CALCULADORA</div>
+  <div class="phone">
+    <div class="screen">
+      <div class="vs-hdr">
+        <div class="back-btn">◀</div>
+        <span class="vs-title">VS</span>
+        <div class="rotar">↺ ROTAR</div>
+      </div>
+      <div class="vs-bar">
+        <div class="vs-poke">
+          <div class="vs-sph">🦊</div>
+          <span class="vs-name">DELPHOX</span>
+          <div class="vs-types"><span class="tp t-fire">FUEGO</span><span class="tp t-psych">PSÍQ</span></div>
+        </div>
+        <div style="width:20%"></div>
+        <div class="vs-center">VS</div>
+        <div class="vs-poke">
+          <div class="vs-sph">⚔️</div>
+          <span class="vs-name">KINGAMBIT</span>
+          <div class="vs-types"><span class="tp t-dark">SINIESTRO</span><span class="tp t-steel">ACERO</span></div>
+        </div>
+      </div>
+      <div class="stbox">
+        <div class="sth"><span class="h-yo">YO</span><span class="h-st">STAT</span><span class="h-rv">RIVAL MAX</span></div>
+        <div class="strow"><span class="sv lose">150</span><span class="sn">HP</span><span class="sv win r">207</span></div>
+        <div class="strow"><span class="sv lose">89</span><span class="sn">ATK</span><span class="sv win r">205</span></div>
+        <div class="strow"><span class="sv lose">95</span><span class="sn">DEF</span><span class="sv win r">189</span></div>
+        <div class="strow"><span class="sv win">211</span><span class="sn">SpA</span><span class="sv lose r">123</span></div>
+        <div class="strow"><span class="sv lose">127</span><span class="sn">SpD</span><span class="sv win r">150</span></div>
+        <div class="strow"><span class="sv win">204</span><span class="sn">VEL</span><span class="sv lose r">112</span></div>
+      </div>
+      <div class="trow">
+        <div><h4>STATS AL MAXIMO</h4><p>RIVAL EN PEOR CASO</p></div>
+        <div class="toggle"></div>
+      </div>
+      <div class="calcbox">
+        <div class="ch">
+          <div class="clbl atk">── YO ATACO ──</div>
+          <div class="mrow"><div class="ml"><span class="mt">🔮</span><div class="mi"><h4>PSICOCARGA</h4><p>POT:90 · ESP</p></div></div><span class="marr">▼</span></div>
+          <div class="rrow"><span class="rpct" style="color:var(--muted)">68%—80%</span><span class="rverd v-no">NO MATA</span></div>
+        </div>
+        <div class="ch">
+          <div class="clbl def">── RIVAL ATACA ──</div>
+          <div class="mrow"><div class="ml"><span class="mt">🌑</span><div class="mi"><h4>CORTE NOCTURNO</h4><p>POT:70 · FÍS</p></div></div><span class="marr">▼</span></div>
+          <div class="rrow"><span class="rpct" style="color:var(--blue)">45%—53%</span><span class="rverd v-ok">VIVES</span></div>
+        </div>
+      </div>
+      <div class="stbtns">
+        <div class="stb my">⚡ MI ESTADO</div>
+        <div class="stb rival">✗ RIVAL</div>
+      </div>
+      <div style="height:10px"></div>
+      <div class="nav">
+        <div class="nav-btn"><span class="icon">🏠</span><span class="lbl">HOME</span></div>
+        <div class="nav-btn"><span class="icon">📷</span><span class="lbl">SCAN</span></div>
+        <div class="nav-btn active"><span class="icon">⚔️</span><span class="lbl">BATALLA</span></div>
+        <div class="nav-btn"><span class="icon">🛡️</span><span class="lbl">EQUIPO</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MI EQUIPO ══ -->
+<div class="phone-wrap">
+  <div class="phone-label">MI EQUIPO</div>
+  <div class="phone">
+    <div class="screen">
+      <div class="hdr">
+        <span class="hdr-title">MI EQUIPO</span>
+        <div class="hdr-btn">+ NUEVO</div>
+      </div>
+      <div style="padding:10px 14px">
+        <div class="import-btn">▼ IMPORTAR POKEPASTE</div>
+      </div>
+      <div class="team-list">
+        <div class="tcard">
+          <div class="tcard-sph">🦊</div>
+          <div class="tcard-info">
+            <h3>DELPHOX</h3>
+            <div class="tags">
+              <span class="tag t-fire" style="border-color:#aa0000;color:#ff8888">FUEGO</span>
+              <span class="tag t-psych" style="border-color:#660099;color:#cc66ff">PSÍQ</span>
+              <span class="tag item">MEGAEVOLUCIÓN</span>
+            </div>
+          </div>
+          <span class="tcard-edit">✏️</span>
+        </div>
+        <div class="tcard">
+          <div class="tcard-sph">👻</div>
+          <div class="tcard-info">
+            <h3>MIMIKYU</h3>
+            <div class="tags">
+              <span class="tag t-ghost" style="border-color:#440088;color:#aa66ff">FANTASMA</span>
+              <span class="tag t-fairy" style="border-color:#aa0066;color:#ff88cc">HADA</span>
+              <span class="tag item">BAYA ZIUELA</span>
+            </div>
+          </div>
+          <span class="tcard-edit">✏️</span>
+        </div>
+        <div class="tcard">
+          <div class="tcard-sph">🐦</div>
+          <div class="tcard-info">
+            <h3>CORVIKNIGHT</h3>
+            <div class="tags">
+              <span class="tag t-steel" style="border-color:#334;color:#88aacc">ACERO</span>
+              <span class="tag" style="border-color:#334;color:#88aacc">VOLADOR</span>
+              <span class="tag item">RESTOS</span>
+            </div>
+          </div>
+          <span class="tcard-edit">✏️</span>
+        </div>
+        <div class="tcard">
+          <div class="tcard-sph">💎</div>
+          <div class="tcard-info">
+            <h3>GLIMMORA</h3>
+            <div class="tags">
+              <span class="tag" style="border-color:#555;color:#aaa">ROCA</span>
+              <span class="tag" style="border-color:#660099;color:#cc66ff">VENENO</span>
+              <span class="tag item">BANDA AGUANTE</span>
+            </div>
+          </div>
+          <span class="tcard-edit">✏️</span>
+        </div>
+        <div class="tcard">
+          <div class="tcard-sph">🌊</div>
+          <div class="tcard-info">
+            <h3>PRIMARINA</h3>
+            <div class="tags">
+              <span class="tag t-water" style="border-color:#0044aa;color:#66aaff">AGUA</span>
+              <span class="tag t-fairy" style="border-color:#aa0066;color:#ff88cc">HADA</span>
+              <span class="tag item">BAYA ZIDRA</span>
+            </div>
+          </div>
+          <span class="tcard-edit">✏️</span>
+        </div>
+        <div class="tcard">
+          <div class="tcard-sph">🐉</div>
+          <div class="tcard-info">
+            <h3>DRAGAPULT</h3>
+            <div class="tags">
+              <span class="tag" style="border-color:#0044aa;color:#66aaff">DRAGÓN</span>
+              <span class="tag t-ghost" style="border-color:#440088;color:#aa66ff">FANTASMA</span>
+              <span class="tag item">PAÑUELO ELEC.</span>
+            </div>
+          </div>
+          <span class="tcard-edit">✏️</span>
+        </div>
+      </div>
+      <div style="height:8px"></div>
+      <div class="nav">
+        <div class="nav-btn"><span class="icon">🏠</span><span class="lbl">HOME</span></div>
+        <div class="nav-btn"><span class="icon">📷</span><span class="lbl">SCAN</span></div>
+        <div class="nav-btn"><span class="icon">⚔️</span><span class="lbl">BATALLA</span></div>
+        <div class="nav-btn active"><span class="icon">🛡️</span><span class="lbl">EQUIPO</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ EDITAR POKEMON ══ -->
+<div class="phone-wrap">
+  <div class="phone-label">EDITAR POKÉMON</div>
+  <div class="phone">
+    <div class="screen">
+      <div class="edit-header">
+        <div class="back-btn">◀</div>
+        <div style="font-size:32px">🦊</div>
+        <span class="edit-title">DELPHOX</span>
+        <div class="edit-save">GUARDAR</div>
+      </div>
+      <div class="edit-body">
+
+        <div>
+          <div class="field-lbl">HABILIDAD</div>
+          <div class="ability-btns">
+            <div class="abtn active">BLAZE</div>
+            <div class="abtn">MAGICIAN</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="field-lbl">OBJETO</div>
+          <div style="background:var(--bg3);border:2px solid var(--red);padding:9px 12px;font-family:var(--px);font-size:7px;color:var(--white);display:flex;align-items:center;gap:8px;">
+            <span>🔮</span> MEGAEVOLUCIÓN
+          </div>
+        </div>
+
+        <div>
+          <div class="field-lbl">NATURALEZA</div>
+          <div class="nature-grid">
+            <div class="nbtn">TIMID</div>
+            <div class="nbtn active">MODEST</div>
+            <div class="nbtn">BOLD</div>
+            <div class="nbtn">CALM</div>
+            <div class="nbtn">JOLLY</div>
+            <div class="nbtn">ADAMANT</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="field-lbl">SP SPREAD <span style="color:var(--red)">38/66</span></div>
+          <div class="sp-sliders">
+            <div class="sp-row"><span class="sp-lbl">HP</span><div class="sp-bar"><div class="sp-fill" style="width:0%"></div></div><span class="sp-val">0</span></div>
+            <div class="sp-row"><span class="sp-lbl">ATK</span><div class="sp-bar"><div class="sp-fill" style="width:0%"></div></div><span class="sp-val">0</span></div>
+            <div class="sp-row"><span class="sp-lbl">DEF</span><div class="sp-bar"><div class="sp-fill" style="width:0%"></div></div><span class="sp-val">0</span></div>
+            <div class="sp-row"><span class="sp-lbl">SpA</span><div class="sp-bar"><div class="sp-fill" style="width:75%"></div></div><span class="sp-val">24</span></div>
+            <div class="sp-row"><span class="sp-lbl">SpD</span><div class="sp-bar"><div class="sp-fill" style="width:0%"></div></div><span class="sp-val">0</span></div>
+            <div class="sp-row"><span class="sp-lbl">VEL</span><div class="sp-bar"><div class="sp-fill" style="width:44%"></div></div><span class="sp-val">14</span></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="field-lbl">MOVIMIENTOS</div>
+          <div class="moves-grid">
+            <div class="move-slot">
+              <h4>FUEGO FATUO</h4>
+              <p>Estado · —</p>
+            </div>
+            <div class="move-slot">
+              <h4>PSICOCARGA</h4>
+              <p>Esp · 90</p>
+            </div>
+            <div class="move-slot">
+              <h4>LANZALLAMAS</h4>
+              <p>Esp · 90</p>
+            </div>
+            <div class="move-slot empty">
+              <span>+ AÑADIR</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div style="height:8px"></div>
+      <div class="nav">
+        <div class="nav-btn"><span class="icon">🏠</span><span class="lbl">HOME</span></div>
+        <div class="nav-btn"><span class="icon">📷</span><span class="lbl">SCAN</span></div>
+        <div class="nav-btn"><span class="icon">⚔️</span><span class="lbl">BATALLA</span></div>
+        <div class="nav-btn active"><span class="icon">🛡️</span><span class="lbl">EQUIPO</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ 1 VS 1 ══ -->
+<div class="phone-wrap">
+  <div class="phone-label">MODO 1 VS 1</div>
+  <div class="phone">
+    <div class="screen">
+
+      <!-- Header -->
+      <div class="hdr">
+        <div class="back-btn">◀</div>
+        <span class="hdr-title">1 VS 1</span>
+        <div style="width:30px"></div>
+      </div>
+
+      <!-- Subtítulo -->
+      <div style="padding:10px 14px 0; font-family:var(--px); font-size:5px; color:var(--muted); letter-spacing:1px; text-align:center; line-height:2;">
+        ELIGE TU POKÉMON Y EL RIVAL<br>SIN GASTAR ESCANEOS
+      </div>
+
+      <!-- Sección MI POKÉMON -->
+      <div style="padding:12px 14px 0;">
+        <div class="tlbl my">MI POKÉMON</div>
+        <div class="pgrid">
+          <div class="pc sel" style="border-color:var(--red);box-shadow:0 0 12px rgba(255,34,68,0.3)">
+            <div class="psph">🦊</div>
+            <span class="pname">DELPHOX</span>
+            <div class="pitem">🔮</div>
+          </div>
+          <div class="pc">
+            <div class="psph">👻</div>
+            <span class="pname">MIMIKYU</span>
+            <div class="pitem">🍃</div>
+          </div>
+          <div class="pc">
+            <div class="psph">🐦</div>
+            <span class="pname">CORVI-<br>KNIGHT</span>
+            <div class="pitem">🍖</div>
+          </div>
+          <div class="pc">
+            <div class="psph">💎</div>
+            <span class="pname">GLIMMORA</span>
+            <div class="pitem">🎗️</div>
+          </div>
+          <div class="pc">
+            <div class="psph">🌊</div>
+            <span class="pname">PRIMARINA</span>
+            <div class="pitem">🌱</div>
+          </div>
+          <div class="pc">
+            <div class="psph">🐉</div>
+            <span class="pname">DRAGA-<br>PULT</span>
+            <div class="pitem">💨</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección POKÉMON RIVAL -->
+      <div style="padding:10px 14px 0;">
+        <div class="tlbl rival">POKÉMON RIVAL</div>
+
+        <!-- Buscador -->
+        <div style="
+          background:var(--bg3); border:2px solid var(--red);
+          padding:10px 12px; display:flex; align-items:center; gap:8px;
+          margin-bottom:8px;
+          box-shadow:0 0 8px rgba(255,34,68,0.15);
+        ">
+          <span style="font-size:13px;">🔍</span>
+          <span style="font-family:var(--px);font-size:7px;color:var(--white);">KINGAMBIT</span>
+          <span style="font-family:var(--px);font-size:7px;color:var(--red);animation:blink 1s infinite;">_</span>
+        </div>
+
+        <!-- Resultado seleccionado -->
+        <div style="
+          background:var(--bg2); border:2px solid var(--red);
+          padding:12px 14px; display:flex; align-items:center; gap:12px;
+          box-shadow:0 0 12px rgba(255,34,68,0.2);
+          margin-bottom:8px;
+        ">
+          <div style="width:52px;height:52px;background:var(--bg3);border:1px solid var(--bg4);display:flex;align-items:center;justify-content:center;font-size:24px;">⚔️</div>
+          <div style="flex:1;">
+            <div style="font-family:var(--px);font-size:9px;margin-bottom:5px;color:var(--white);">KINGAMBIT</div>
+            <div style="display:flex;gap:4px;">
+              <span class="tp t-dark">SINIESTRO</span>
+              <span class="tp t-steel">ACERO</span>
+            </div>
+          </div>
+          <div style="font-family:var(--px);font-size:6px;color:var(--red);text-align:right;line-height:2;">
+            SET<br>✓ CARGADO
+          </div>
+        </div>
+
+        <!-- Set precargado preview -->
+        <div style="background:var(--bg2);border:1px solid var(--bg3);padding:10px 12px;">
+          <div style="font-family:var(--px);font-size:5px;color:var(--muted);letter-spacing:1px;margin-bottom:8px;">SET COMPETITIVO CARGADO</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:6px;">
+            <div style="background:var(--bg3);border:1px solid var(--bg4);padding:6px 8px;">
+              <div style="font-family:var(--px);font-size:5px;color:var(--white);margin-bottom:2px;">CORTE NOCTURNO</div>
+              <div style="font-family:var(--mn);font-size:9px;color:var(--muted);">Fís · 70</div>
+            </div>
+            <div style="background:var(--bg3);border:1px solid var(--bg4);padding:6px 8px;">
+              <div style="font-family:var(--px);font-size:5px;color:var(--white);margin-bottom:2px;">GOLPE BAJO</div>
+              <div style="font-family:var(--mn);font-size:9px;color:var(--muted);">Fís · 40</div>
+            </div>
+            <div style="background:var(--bg3);border:1px solid var(--bg4);padding:6px 8px;">
+              <div style="font-family:var(--px);font-size:5px;color:var(--white);margin-bottom:2px;">DANZA ESPADA</div>
+              <div style="font-family:var(--mn);font-size:9px;color:var(--muted);">Estado · —</div>
+            </div>
+            <div style="background:var(--bg3);border:1px solid var(--bg4);padding:6px 8px;">
+              <div style="font-family:var(--px);font-size:5px;color:var(--white);margin-bottom:2px;">KOLOSSAL</div>
+              <div style="font-family:var(--mn);font-size:9px;color:var(--muted);">Fís · 100</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;">
+            <span style="font-family:var(--px);font-size:5px;background:var(--bg3);border:1px solid var(--bg4);padding:3px 6px;color:var(--muted);">SUPREME OVERLORD</span>
+            <span style="font-family:var(--px);font-size:5px;background:var(--bg3);border:1px solid rgba(255,224,0,0.3);padding:3px 6px;color:var(--gold);">BAYA ZIUELA</span>
+            <span style="font-family:var(--px);font-size:5px;background:var(--bg3);border:1px solid var(--bg4);padding:3px 6px;color:var(--muted);">ADAMANT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón IR A VS -->
+      <div style="padding:12px 14px 0;">
+        <div style="
+          background:var(--red); color:var(--bg);
+          font-family:var(--px); font-size:8px;
+          padding:13px; text-align:center; cursor:pointer;
+          box-shadow:3px 3px 0 var(--red2);
+          letter-spacing:0.5px;
+        ">► IR A CALCULADORA VS</div>
+      </div>
+
+      <div style="height:8px"></div>
+      <div class="nav">
+        <div class="nav-btn"><span class="icon">🏠</span><span class="lbl">HOME</span></div>
+        <div class="nav-btn"><span class="icon">📷</span><span class="lbl">SCAN</span></div>
+        <div class="nav-btn active"><span class="icon">⚔️</span><span class="lbl">BATALLA</span></div>
+        <div class="nav-btn"><span class="icon">🛡️</span><span class="lbl">EQUIPO</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ESCANEAR — CON CONTADOR ══ -->
+<div class="phone-wrap">
+  <div class="phone-label">ESCANEAR + LÍMITE</div>
+  <div class="phone">
+    <div class="screen">
+      <div class="hdr">
+        <span class="hdr-title">ESCANEAR</span>
+      </div>
+
+      <!-- Contador de escaneos -->
+      <div style="
+        margin:12px 14px 0;
+        background:var(--bg2); border:2px solid var(--bg3);
+        padding:12px 14px;
+        display:flex; align-items:center; justify-content:space-between;
+      ">
+        <div>
+          <div style="font-family:var(--px);font-size:6px;color:var(--white);margin-bottom:5px;">ESCANEOS HOY</div>
+          <div style="font-family:var(--px);font-size:5px;color:var(--muted);">SE RENUEVAN A LAS 00:00</div>
+        </div>
+        <!-- 2 de 3 usados -->
+        <div style="display:flex;gap:6px;align-items:center;">
+          <div style="width:14px;height:14px;background:var(--red);border:2px solid var(--red2);box-shadow:0 0 6px rgba(255,34,68,0.4);"></div>
+          <div style="width:14px;height:14px;background:var(--red);border:2px solid var(--red2);box-shadow:0 0 6px rgba(255,34,68,0.4);"></div>
+          <div style="width:14px;height:14px;background:var(--bg3);border:2px solid var(--bg4);"></div>
+        </div>
+      </div>
+
+      <!-- Alerta último escaneo -->
+      <div style="
+        margin:8px 14px 0;
+        background:rgba(255,224,0,0.06); border:2px solid rgba(255,224,0,0.3);
+        padding:10px 12px;
+        font-family:var(--px); font-size:5px; color:var(--gold);
+        line-height:2; letter-spacing:0.5px;
+      ">
+        ⚠ ÚLTIMO ESCANEO DISPONIBLE<br>
+        <span style="color:var(--muted);">PREMIUM = ESCANEOS ILIMITADOS</span>
+      </div>
+
+      <!-- Área cámara -->
+      <div style="flex:1;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;position:relative;">
+        <div style="font-family:var(--px);font-size:5px;color:var(--muted);text-align:center;line-height:2;padding:0 20px;">
+          ENFOCA LA PANTALLA<br>DE LA SWITCH<br>Y PULSA EL BOTÓN
+        </div>
+        <div class="scan-frame">
+          <div class="sf-bl"></div>
+          <div class="sf-br"></div>
+          <div class="scan-line"></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--px);font-size:5px;color:rgba(255,34,68,0.25);text-align:center;line-height:2;">ENCUADRA<br>EL EQUIPO<br>RIVAL</div>
+        </div>
+        <div style="font-family:var(--px);font-size:5px;color:rgba(255,34,68,0.4);text-align:center;line-height:2;">
+          GEMINI FLASH LITE · ~1 SEG
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;align-items:center;padding:14px 0 0;background:var(--bg);">
+        <div class="scan-cta">📷</div>
+      </div>
+
+      <!-- Alternativa 1vs1 -->
+      <div style="padding:0 14px 6px;text-align:center;">
+        <div style="font-family:var(--px);font-size:5px;color:var(--muted);margin-bottom:8px;">── O SIN GASTAR ESCANEOS ──</div>
+        <div style="
+          background:var(--bg2); border:2px solid var(--bg3);
+          padding:10px 14px; cursor:pointer;
+          font-family:var(--px); font-size:7px; color:var(--white);
+          display:flex; align-items:center; justify-content:center; gap:8px;
+          transition:border-color 0.1s;
+        ">
+          ⚔️ MODO 1 VS 1
+        </div>
+      </div>
+
+      <div class="nav">
+        <div class="nav-btn"><span class="icon">🏠</span><span class="lbl">HOME</span></div>
+        <div class="nav-btn active"><span class="icon">📷</span><span class="lbl">SCAN</span></div>
+        <div class="nav-btn"><span class="icon">⚔️</span><span class="lbl">BATALLA</span></div>
+        <div class="nav-btn"><span class="icon">🛡️</span><span class="lbl">EQUIPO</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/swordsdance-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#080808" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <title>SwordsDance — Asistente de Batalla Pokémon Champions</title>
+    <meta name="description" content="Escanea el equipo rival, calcula el daño y gana en Pokémon Champions. Sets Smogon integrados, Megas Z-A y calculadora con rango mínimo-máximo." />
+    <meta name="keywords" content="pokemon champions, swords dance, batalla, calculadora daño, smogon, megas, equipo rival" />
+    <link rel="canonical" href="https://swordsdance.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title"       content="SwordsDance — Asistente de Batalla Pokémon" />
+    <meta property="og:description" content="Escanea el equipo rival y calcula el daño al instante. PWA gratuita para Pokémon Champions." />
+    <meta property="og:image"       content="https://swordsdance.app/swordsdance-logo.png" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://swordsdance.app/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary" />
+    <meta name="twitter:title"       content="SwordsDance — Asistente de Batalla Pokémon" />
+    <meta name="twitter:description" content="Escanea el equipo rival y calcula el daño al instante. PWA gratuita para Pokémon Champions." />
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="es"        href="https://swordsdance.app/" />
+    <link rel="alternate" hreflang="en"        href="https://swordsdance.app/en/" />
+    <link rel="alternate" hreflang="ja"        href="https://swordsdance.app/ja/" />
+    <link rel="alternate" hreflang="x-default" href="https://swordsdance.app/" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "SwordsDance",
+      "url": "https://swordsdance.app/",
+      "description": "Asistente de batalla para Pokémon Champions. Calcula el daño, analiza al rival y gestiona tu equipo.",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Google Analytics 4 — replace G-XXXXXXXXXX with your Measurement ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

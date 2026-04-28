@@ -1,0 +1,407 @@
+[
+  {
+    "nameApi": "megaevolucion",
+    "nameEn": "Mega Evolution",
+    "nameEs": "Megaevolución"
+  },
+  {
+    "nameApi": "aspear-berry",
+    "nameEn": "Aspear Berry",
+    "nameEs": "Baya Perasi"
+  },
+  {
+    "nameApi": "assault-vest",
+    "nameEn": "Assault Vest",
+    "nameEs": "Chaleco Asalto"
+  },
+  {
+    "nameApi": "babiri-berry",
+    "nameEn": "Babiri Berry",
+    "nameEs": "Baya Baribá"
+  },
+  {
+    "nameApi": "black-belt",
+    "nameEn": "Black Belt",
+    "nameEs": "Cinturón Negro"
+  },
+  {
+    "nameApi": "black-glasses",
+    "nameEn": "Black Glasses",
+    "nameEs": "Gafas de Sol"
+  },
+  {
+    "nameApi": "black-sludge",
+    "nameEn": "Black Sludge",
+    "nameEs": "Restos Negros"
+  },
+  {
+    "nameApi": "bright-powder",
+    "nameEn": "Bright Powder",
+    "nameEs": "Polvo Brillo"
+  },
+  {
+    "nameApi": "charcoal",
+    "nameEn": "Charcoal",
+    "nameEs": "Carbón"
+  },
+  {
+    "nameApi": "charti-berry",
+    "nameEn": "Charti Berry",
+    "nameEs": "Baya Alcho"
+  },
+  {
+    "nameApi": "cheri-berry",
+    "nameEn": "Cheri Berry",
+    "nameEs": "Baya Zreza"
+  },
+  {
+    "nameApi": "chesto-berry",
+    "nameEn": "Chesto Berry",
+    "nameEs": "Baya Atania"
+  },
+  {
+    "nameApi": "chilan-berry",
+    "nameEn": "Chilan Berry",
+    "nameEs": "Baya Chilan"
+  },
+  {
+    "nameApi": "choice-band",
+    "nameEn": "Choice Band",
+    "nameEs": "Banda Elección"
+  },
+  {
+    "nameApi": "choice-scarf",
+    "nameEn": "Choice Scarf",
+    "nameEs": "Pañuelo Elección"
+  },
+  {
+    "nameApi": "choice-specs",
+    "nameEn": "Choice Specs",
+    "nameEs": "Gafas Elección"
+  },
+  {
+    "nameApi": "chople-berry",
+    "nameEn": "Chople Berry",
+    "nameEs": "Baya Pomaro"
+  },
+  {
+    "nameApi": "coba-berry",
+    "nameEn": "Coba Berry",
+    "nameEs": "Baya Kouba"
+  },
+  {
+    "nameApi": "colbur-berry",
+    "nameEn": "Colbur Berry",
+    "nameEs": "Baya Dillo"
+  },
+  {
+    "nameApi": "damp-rock",
+    "nameEn": "Damp Rock",
+    "nameEs": "Roca Húmeda"
+  },
+  {
+    "nameApi": "dragon-fang",
+    "nameEn": "Dragon Fang",
+    "nameEs": "Colmillo Dragón"
+  },
+  {
+    "nameApi": "eviolite",
+    "nameEn": "Eviolite",
+    "nameEs": "Eviolita"
+  },
+  {
+    "nameApi": "expert-belt",
+    "nameEn": "Expert Belt",
+    "nameEs": "Cinturón Experto"
+  },
+  {
+    "nameApi": "fairy-feather",
+    "nameEn": "Fairy Feather",
+    "nameEs": "Pluma Feérica"
+  },
+  {
+    "nameApi": "flame-orb",
+    "nameEn": "Flame Orb",
+    "nameEs": "Orbe Llama"
+  },
+  {
+    "nameApi": "focus-band",
+    "nameEn": "Focus Band",
+    "nameEs": "Cinta Aguante"
+  },
+  {
+    "nameApi": "focus-sash",
+    "nameEn": "Focus Sash",
+    "nameEs": "Banda Aguante"
+  },
+  {
+    "nameApi": "haban-berry",
+    "nameEn": "Haban Berry",
+    "nameEs": "Baya Anjiro"
+  },
+  {
+    "nameApi": "hard-stone",
+    "nameEn": "Hard Stone",
+    "nameEs": "Piedra Dura"
+  },
+  {
+    "nameApi": "heat-rock",
+    "nameEn": "Heat Rock",
+    "nameEs": "Roca Calorífica"
+  },
+  {
+    "nameApi": "icy-rock",
+    "nameEn": "Icy Rock",
+    "nameEs": "Roca Helada"
+  },
+  {
+    "nameApi": "iron-ball",
+    "nameEn": "Iron Ball",
+    "nameEs": "Bola de Hierro"
+  },
+  {
+    "nameApi": "kasib-berry",
+    "nameEn": "Kasib Berry",
+    "nameEs": "Baya Drasi"
+  },
+  {
+    "nameApi": "kebia-berry",
+    "nameEn": "Kebia Berry",
+    "nameEs": "Baya Kebia"
+  },
+  {
+    "nameApi": "kings-rock",
+    "nameEn": "King's Rock",
+    "nameEs": "Roca del Rey"
+  },
+  {
+    "nameApi": "leftovers",
+    "nameEn": "Leftovers",
+    "nameEs": "Restos"
+  },
+  {
+    "nameApi": "leppa-berry",
+    "nameEn": "Leppa Berry",
+    "nameEs": "Baya Zanama"
+  },
+  {
+    "nameApi": "life-orb",
+    "nameEn": "Life Orb",
+    "nameEs": "Orbe Vital"
+  },
+  {
+    "nameApi": "light-ball",
+    "nameEn": "Light Ball",
+    "nameEs": "Bola Luminosa"
+  },
+  {
+    "nameApi": "light-clay",
+    "nameEn": "Light Clay",
+    "nameEs": "Arcilla Ligera"
+  },
+  {
+    "nameApi": "lum-berry",
+    "nameEn": "Lum Berry",
+    "nameEs": "Baya Ziuela"
+  },
+  {
+    "nameApi": "magnet",
+    "nameEn": "Magnet",
+    "nameEs": "Imán"
+  },
+  {
+    "nameApi": "mental-herb",
+    "nameEn": "Mental Herb",
+    "nameEs": "Hierba Mental"
+  },
+  {
+    "nameApi": "metal-coat",
+    "nameEn": "Metal Coat",
+    "nameEs": "Revestimiento Metálico"
+  },
+  {
+    "nameApi": "miracle-seed",
+    "nameEn": "Miracle Seed",
+    "nameEs": "Semilla Milagro"
+  },
+  {
+    "nameApi": "mystic-water",
+    "nameEn": "Mystic Water",
+    "nameEs": "Agua Mística"
+  },
+  {
+    "nameApi": "never-melt-ice",
+    "nameEn": "Never-Melt Ice",
+    "nameEs": "Hielo Perpetuo"
+  },
+  {
+    "nameApi": "occa-berry",
+    "nameEn": "Occa Berry",
+    "nameEs": "Baya Caoca"
+  },
+  {
+    "nameApi": "oran-berry",
+    "nameEn": "Oran Berry",
+    "nameEs": "Baya Aranja"
+  },
+  {
+    "nameApi": "passho-berry",
+    "nameEn": "Passho Berry",
+    "nameEs": "Baya Pasio"
+  },
+  {
+    "nameApi": "payapa-berry",
+    "nameEn": "Payapa Berry",
+    "nameEs": "Baya Payapa"
+  },
+  {
+    "nameApi": "pecha-berry",
+    "nameEn": "Pecha Berry",
+    "nameEs": "Baya Meloc"
+  },
+  {
+    "nameApi": "persim-berry",
+    "nameEn": "Persim Berry",
+    "nameEs": "Baya Caquic"
+  },
+  {
+    "nameApi": "poison-barb",
+    "nameEn": "Poison Barb",
+    "nameEs": "Flecha Venenosa"
+  },
+  {
+    "nameApi": "quick-claw",
+    "nameEn": "Quick Claw",
+    "nameEs": "Garra Rápida"
+  },
+  {
+    "nameApi": "rawst-berry",
+    "nameEn": "Rawst Berry",
+    "nameEs": "Baya Safre"
+  },
+  {
+    "nameApi": "red-card",
+    "nameEn": "Red Card",
+    "nameEs": "Tarjeta Roja"
+  },
+  {
+    "nameApi": "rindo-berry",
+    "nameEn": "Rindo Berry",
+    "nameEs": "Baya Tamar"
+  },
+  {
+    "nameApi": "rocky-helmet",
+    "nameEn": "Rocky Helmet",
+    "nameEs": "Casco Rocoso"
+  },
+  {
+    "nameApi": "roseli-berry",
+    "nameEn": "Roseli Berry",
+    "nameEs": "Baya Hibis"
+  },
+  {
+    "nameApi": "safety-goggles",
+    "nameEn": "Safety Goggles",
+    "nameEs": "Gafas Seguridad"
+  },
+  {
+    "nameApi": "scope-lens",
+    "nameEn": "Scope Lens",
+    "nameEs": "Periscopio"
+  },
+  {
+    "nameApi": "sharp-beak",
+    "nameEn": "Sharp Beak",
+    "nameEs": "Pico Afilado"
+  },
+  {
+    "nameApi": "shell-bell",
+    "nameEn": "Shell Bell",
+    "nameEs": "Cascabel Concha"
+  },
+  {
+    "nameApi": "shuca-berry",
+    "nameEn": "Shuca Berry",
+    "nameEs": "Baya Acardo"
+  },
+  {
+    "nameApi": "silk-scarf",
+    "nameEn": "Silk Scarf",
+    "nameEs": "Pañuelo de Seda"
+  },
+  {
+    "nameApi": "silver-powder",
+    "nameEn": "Silver Powder",
+    "nameEs": "Polvo Plata"
+  },
+  {
+    "nameApi": "sitrus-berry",
+    "nameEn": "Sitrus Berry",
+    "nameEs": "Baya Zidra"
+  },
+  {
+    "nameApi": "smooth-rock",
+    "nameEn": "Smooth Rock",
+    "nameEs": "Roca Lisa"
+  },
+  {
+    "nameApi": "soft-sand",
+    "nameEn": "Soft Sand",
+    "nameEs": "Arena Fina"
+  },
+  {
+    "nameApi": "spell-tag",
+    "nameEn": "Spell Tag",
+    "nameEs": "Hechizo"
+  },
+  {
+    "nameApi": "tanga-berry",
+    "nameEn": "Tanga Berry",
+    "nameEs": "Baya Yecana"
+  },
+  {
+    "nameApi": "terrain-extender",
+    "nameEn": "Terrain Extender",
+    "nameEs": "Extensión Terreno"
+  },
+  {
+    "nameApi": "toxic-orb",
+    "nameEn": "Toxic Orb",
+    "nameEs": "Orbe Tóxico"
+  },
+  {
+    "nameApi": "twisted-spoon",
+    "nameEn": "Twisted Spoon",
+    "nameEs": "Cuchara Torcida"
+  },
+  {
+    "nameApi": "wacan-berry",
+    "nameEn": "Wacan Berry",
+    "nameEs": "Baya Gualot"
+  },
+  {
+    "nameApi": "weakness-policy",
+    "nameEn": "Weakness Policy",
+    "nameEs": "Política Debilidad"
+  },
+  {
+    "nameApi": "white-herb",
+    "nameEn": "White Herb",
+    "nameEs": "Hierba Blanca"
+  },
+  {
+    "nameApi": "wide-lens",
+    "nameEn": "Wide Lens",
+    "nameEs": "Lente Amplia"
+  },
+  {
+    "nameApi": "yache-berry",
+    "nameEn": "Yache Berry",
+    "nameEs": "Baya Rimoya"
+  },
+  {
+    "nameApi": "zoom-lens",
+    "nameEn": "Zoom Lens",
+    "nameEs": "Lente Zoom"
+  }
+]
