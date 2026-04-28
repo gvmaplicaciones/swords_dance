@@ -15,12 +15,4 @@ const app = (
   </React.StrictMode>
 )
 
-const path = window.location.pathname
-const isLandingPath = path.startsWith('/en') || path.startsWith('/ja')
-const canHydrate = rootEl.hasChildNodes() && isLandingPath
-
-if (canHydrate) {
-  ReactDOM.hydrateRoot(rootEl, app)
-} else {
-  ReactDOM.createRoot(rootEl).render(app)
-}
+ReactDOM.createRoot(rootEl).render(app)

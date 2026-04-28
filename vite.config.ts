@@ -3,14 +3,11 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import basicSsl from '@vitejs/plugin-basic-ssl'
 
-export default defineConfig(({ isSsrBuild }) => ({
-  build: {
-    emptyOutDir: !isSsrBuild,
-  },
+export default defineConfig({
   plugins: [
-    !isSsrBuild && basicSsl(),
+    basicSsl(),
     react(),
-    !isSsrBuild && VitePWA({
+    VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'swordsdance-logo.png'],
       workbox: {
@@ -30,5 +27,5 @@ export default defineConfig(({ isSsrBuild }) => ({
         ],
       },
     }),
-  ].filter(Boolean),
-}))
+  ],
+})
