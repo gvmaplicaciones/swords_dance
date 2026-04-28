@@ -11,9 +11,6 @@ import PremiumScreen     from './screens/PremiumScreen'
 import OneVsOneScreen    from './screens/OneVsOneScreen'
 import TeamsScreen       from './screens/TeamsScreen'
 
-function isOnboarded(): boolean {
-  try { return localStorage.getItem('sd_onboarded') === '1' } catch { return true }
-}
 
 export default function App() {
   return (
@@ -23,7 +20,7 @@ export default function App() {
         <Routes>
           <Route path="/landing"  element={<LandingScreen />} />
           <Route path="/premium"  element={<PremiumScreen />} />
-          <Route path="/"         element={isOnboarded() ? <HomeScreen /> : <LandingScreen />} />
+          <Route path="/"         element={<HomeScreen />} />
           <Route path="/battle"   element={<BattleScreen />} />
           <Route path="/vs"       element={<VSScreen />} />
           <Route path="/team"     element={<TeamEditorScreen />} />
