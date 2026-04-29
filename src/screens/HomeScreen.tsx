@@ -98,14 +98,14 @@ export default function HomeScreen() {
             marginBottom: '8px',
             letterSpacing: '2px',
           }}>
-            {t('home.language')}
+            IDIOMA | LANGUAGE | 言語
           </p>
           <div className="flex gap-2">
             {([
-              { code: 'es', flag: '🇪🇸', path: '/' },
-              { code: 'en', flag: '🇬🇧', path: '/en/' },
-              { code: 'ja', flag: '🇯🇵', path: '/ja/' },
-            ] as const).map(({ code, flag, path }) => {
+              { code: 'es', flag: '🇪🇸', name: 'ESPAÑOL', path: '/' },
+              { code: 'en', flag: '🇬🇧', name: 'ENGLISH', path: '/en/' },
+              { code: 'ja', flag: '🇯🇵', name: '日本語',  path: '/ja/' },
+            ] as const).map(({ code, flag, name, path }) => {
               const active = i18n.language === code
               return (
                 <button
@@ -120,12 +120,12 @@ export default function HomeScreen() {
                     minHeight: '56px',
                     border: active ? '2px solid #ff2244' : '2px solid #242424',
                     boxShadow: active ? '3px 3px 0 #cc1133' : 'none',
-                    color: active ? '#ff2244' : '#999999',
+                    color: active ? '#ff2244' : '#ffffff',
                   }}
                 >
                   <span style={{ fontFamily: 'sans-serif', fontSize: '28px', lineHeight: 1 }}>{flag}</span>
                   <span style={{ fontFamily: "'Press Start 2P', monospace", fontSize: '8px', marginTop: '4px' }}>
-                    {code.toUpperCase()}
+                    {name}
                   </span>
                 </button>
               )
