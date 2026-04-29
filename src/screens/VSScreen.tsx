@@ -16,9 +16,22 @@ import TypeBadge from '../components/TypeBadge'
 import { SearchableSelect, type SelectOption } from '../components/SearchableSelect'
 import PixelNav from '../components/PixelNav'
 import pokemonDataRaw from '../data/pokemon.json'
+import itemsDataRaw   from '../data/items.json'
 import type { PokemonData } from '../types/pokemon'
 
 const ALL_POKEMON_DATA = pokemonDataRaw as PokemonData[]
+
+type ItemEntry = { nameApi: string; nameEn: string; nameEs: string }
+const ITEM_BY_SLUG: Record<string, ItemEntry> = {}
+for (const it of itemsDataRaw as ItemEntry[]) {
+  ITEM_BY_SLUG[it.nameApi] = it
+}
+function itemDisplayName(slug: string | undefined, name: string, lang: string): string {
+  if (!slug) return name
+  const entry = ITEM_BY_SLUG[slug]
+  if (!entry) return name
+  return lang === 'es' ? entry.nameEs : entry.nameEn
+}
 const MAX_STATS_KEY = 'sd_max_stats_mode'
 
 const TYPE_COLORS: Record<string, string> = {
@@ -832,7 +845,7 @@ export default function VSScreen() {
           {mySlot?.item && (
             <div className="flex items-center gap-1 mt-0.5">
               {mySlot.itemSlug && <img src={`/assets/items/${mySlot.itemSlug}.png`} alt="" className="w-4 h-4 object-contain" />}
-              <span className="font-mono text-text-muted text-[9px] normal-case">{mySlot.item}</span>
+              <span className="font-mono text-text-muted text-[9px] normal-case">{itemDisplayName(mySlot.itemSlug, mySlot.item, lang)}</span>
             </div>
           )}
           {myMegaForm && isMegaStone(mySlot?.itemSlug ?? '') && (
@@ -889,7 +902,7 @@ export default function VSScreen() {
           {rivalSet?.item && (
             <div className="flex items-center gap-1 mt-0.5">
               {rivalSet.itemSlug && <img src={`/assets/items/${rivalSet.itemSlug}.png`} alt="" className="w-4 h-4 object-contain" />}
-              <span className="font-mono text-text-muted text-[9px] normal-case">{rivalSet.item}</span>
+              <span className="font-mono text-text-muted text-[9px] normal-case">{itemDisplayName(rivalSet.itemSlug, rivalSet.item, lang)}</span>
             </div>
           )}
           {rivalMegaForm && isMegaStone(rivalSet?.itemSlug ?? '') && (
