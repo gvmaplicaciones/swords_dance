@@ -7,7 +7,7 @@ import PixelNav from '../components/PixelNav'
 export default function HomeScreen() {
   const navigate = useNavigate()
   const { smogonReady, smogonError } = useBattle()
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   return (
     <div className="flex flex-col h-full bg-bg-primary">
@@ -96,6 +96,42 @@ export default function HomeScreen() {
           </div>
         )}
 
+      </div>
+
+      {/* Language selector */}
+      <div className="shrink-0 px-4 py-3" style={{ borderTop: '2px solid #242424' }}>
+        <p className="font-sans text-text-muted text-[8px] uppercase tracking-widest mb-2 text-center">
+          {{ es: 'IDIOMA', en: 'LANGUAGE', ja: '言語' }[i18n.language] ?? 'IDIOMA'}
+        </p>
+        <div className="flex gap-2">
+          {([
+            { code: 'es', flag: '🇪🇸', path: '/' },
+            { code: 'en', flag: '🇬🇧', path: '/en/' },
+            { code: 'ja', flag: '🇯🇵', path: '/ja/' },
+          ] as const).map(({ code, flag, path }) => {
+            const active = i18n.language === code
+            return (
+              <button
+                key={code}
+                onClick={() => {
+                  i18n.changeLanguage(code)
+                  localStorage.setItem('sd_lang', code)
+                  navigate(path)
+                }}
+                className="flex-1 flex flex-col items-center justify-center py-2 rounded active:scale-[0.97] transition-all"
+                style={{
+                  minHeight: '56px',
+                  border: active ? '2px solid #ff2244' : '2px solid #242424',
+                  boxShadow: active ? '3px 3px 0 #cc1133' : 'none',
+                  color: active ? '#ff2244' : '#999999',
+                }}
+              >
+                <span style={{ fontSize: '28px', lineHeight: 1 }}>{flag}</span>
+                <span className="font-sans mt-1" style={{ fontSize: '8px' }}>{code.toUpperCase()}</span>
+              </button>
+            )
+          })}
+        </div>
       </div>
 
       <PixelNav />
