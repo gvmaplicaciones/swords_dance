@@ -419,6 +419,7 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
   } = input
 
   const notes: string[] = []
+  const t = i18n.t.bind(i18n)
 
   // ── 1. Transformar tipo del move por habilidad ─────────────────────────────
   const typeTransform     = applyTypeTransform(moveType.toLowerCase(), moveName.toLowerCase(), attackerAbility)
@@ -453,13 +454,13 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
   const stab       = stabResult.mult
   if (stabResult.note) notes.push(stabResult.note)
 
-  const effective   = getTypeEffectiveness(effectiveMoveType, defenderTypes.map(t => t.toLowerCase()))
+  const effective   = getTypeEffectiveness(effectiveMoveType, defenderTypes.map(type => type.toLowerCase()))
   const fairyAura   = getFairyAuraMultiplier(effectiveMoveType, attackerAbility, defenderAbility)
   if (fairyAura.note) notes.push(fairyAura.note)
 
   const critMult    = isCritical ? 1.5 : 1
   const weatherMult = getWeatherMultiplier(effectiveMoveType, weather)
-  const terrainMult = getTerrainMultiplier(effectiveMoveType, terrain, attackerTypes.map(t => t.toLowerCase()))
+  const terrainMult = getTerrainMultiplier(effectiveMoveType, terrain, attackerTypes.map(type => type.toLowerCase()))
   const megaSol     = getMegaSolMult(effectiveMoveType, weather, attackerAbility)
   if (megaSol.note) notes.push(megaSol.note)
 
@@ -522,7 +523,6 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
 
   // ── 7. Rango de daño: aplicar STAB, tipo, clima, terreno y habilidades ────
   // Notas de campo de batalla
-  const t = i18n.t.bind(i18n)
   if (attackerSideHelpingHand && isDoubles)
     notes.push(t('vs.noteHelpingHand'))
   if (attackerSideBattery && isDoubles && moveCategory === 'special')
