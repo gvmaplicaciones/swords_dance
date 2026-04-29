@@ -241,7 +241,7 @@ function getStabMult(
     return { mult: 1.5, note: t('vs.noteProtean') }
   }
 
-  const hasStab = attackerTypes.map(t => t.toLowerCase()).includes(moveType.toLowerCase())
+  const hasStab = attackerTypes.map(type => type.toLowerCase()).includes(moveType.toLowerCase())
   if (!hasStab) return { mult: 1, note: null }
 
   if (ab === 'adaptability') {
