@@ -155,27 +155,28 @@ function applyTypeTransform(
 ): TypeTransformResult {
   const ab = normAb(attackerAbility)
   if (!ab) return { type: moveType, powerMult: 1, note: null }
+  const t = i18n.t.bind(i18n)
 
   if (ab === 'liquidvoice' && moveType === 'normal' && SOUND_MOVES.has(moveName)) {
-    return { type: 'water', powerMult: 1, note: 'Voz Fluida: move de sonido → tipo Agua' }
+    return { type: 'water', powerMult: 1, note: t('vs.noteLiquidVoice') }
   }
   if (ab === 'normalize') {
-    return { type: 'normal', powerMult: 1.2, note: moveType !== 'normal' ? 'Normalizar: move → tipo Normal ×1.2' : null }
+    return { type: 'normal', powerMult: 1.2, note: moveType !== 'normal' ? t('vs.noteNormalize') : null }
   }
   if (ab === 'refrigerate' && moveType === 'normal') {
-    return { type: 'ice', powerMult: 1.2, note: 'Velo Gélido: move Normal → tipo Hielo ×1.2' }
+    return { type: 'ice', powerMult: 1.2, note: t('vs.noteRefrigerate') }
   }
   if (ab === 'pixilate' && moveType === 'normal') {
-    return { type: 'fairy', powerMult: 1.2, note: 'Pixiládo: move Normal → tipo Hada ×1.2' }
+    return { type: 'fairy', powerMult: 1.2, note: t('vs.notePixilate') }
   }
   if (ab === 'aerilate' && moveType === 'normal') {
-    return { type: 'flying', powerMult: 1.2, note: 'Aerodinámica: move Normal → tipo Volador ×1.2' }
+    return { type: 'flying', powerMult: 1.2, note: t('vs.noteAerilate') }
   }
   if (ab === 'galvanize' && moveType === 'normal') {
-    return { type: 'electric', powerMult: 1.2, note: 'Galvanizar: move Normal → tipo Eléctrico ×1.2' }
+    return { type: 'electric', powerMult: 1.2, note: t('vs.noteGalvanize') }
   }
   if (ab === 'dragonize' && moveType === 'normal') {
-    return { type: 'dragon', powerMult: 1.2, note: 'Dragonizar: move Normal → tipo Dragón ×1.2' }
+    return { type: 'dragon', powerMult: 1.2, note: t('vs.noteDragonize') }
   }
   return { type: moveType, powerMult: 1, note: null }
 }
@@ -197,29 +198,30 @@ function getPowerAbilityMult(
   let mult    = 1
   const notes: string[] = []
 
+  const t = i18n.t.bind(i18n)
   if (ab === 'ironfist' && PUNCH_MOVES.has(moveName)) {
     mult *= 1.2
-    notes.push('Puño Férreo: move de puño → ×1.2')
+    notes.push(t('vs.noteIronFist'))
   }
   if (ab === 'reckless' && RECOIL_MOVES.has(moveName)) {
     mult *= 1.2
-    notes.push('Temeridad: move con retroceso → ×1.2')
+    notes.push(t('vs.noteReckless'))
   }
   if (ab === 'toughclaws' && moveIsContact) {
     mult *= 1.3
-    notes.push('Garras Duras: move de contacto → ×1.3')
+    notes.push(t('vs.noteToughClaws'))
   }
   if (ab === 'strongjaw' && BITE_MOVES.has(moveName)) {
     mult *= 1.5
-    notes.push('Mandíbula Fuerte: move de mordisco → ×1.5')
+    notes.push(t('vs.noteStrongJaw'))
   }
   if (ab === 'megalauncher' && PULSE_MOVES.has(moveName)) {
     mult *= 1.5
-    notes.push('Megadisparador: move de pulso/aura → ×1.5')
+    notes.push(t('vs.noteMegaLauncher'))
   }
   if (ab === 'sheerforce' && moveHasSecondaryEffect) {
     mult *= 1.3
-    notes.push('Fuerza Bruta: move con efecto secundario → ×1.3')
+    notes.push(t('vs.noteSheerForce'))
   }
 
   return { mult, notes }
@@ -233,16 +235,17 @@ function getStabMult(
   attackerAbility?: string,
 ): { mult: number; note: string | null } {
   const ab = normAb(attackerAbility)
+  const t = i18n.t.bind(i18n)
 
   if (ab === 'protean' || ab === 'libero') {
-    return { mult: 1.5, note: 'Proteico: STAB en todos los moves' }
+    return { mult: 1.5, note: t('vs.noteProtean') }
   }
 
   const hasStab = attackerTypes.map(t => t.toLowerCase()).includes(moveType.toLowerCase())
   if (!hasStab) return { mult: 1, note: null }
 
   if (ab === 'adaptability') {
-    return { mult: 2.0, note: 'Adaptación: STAB → ×2.0' }
+    return { mult: 2.0, note: t('vs.noteAdaptability') }
   }
 
   return { mult: 1.5, note: null }
@@ -258,15 +261,16 @@ function getAttackerAtkMod(
 ): { atk: number; note: string | null } {
   if (category !== 'physical') return { atk, note: null }
   const ab = normAb(attackerAbility)
+  const t = i18n.t.bind(i18n)
 
   if (ab === 'hugepower' || ab === 'purepower') {
-    return { atk: atk * 2, note: 'Gran Poder: ATK ×2' }
+    return { atk: atk * 2, note: t('vs.noteHugePower') }
   }
   if (ab === 'guts' && hasStatus(attackerStatus)) {
-    return { atk: atk * 1.5, note: 'Agallas: estado → ATK ×1.5 (quemadura no penaliza ATK)' }
+    return { atk: atk * 1.5, note: t('vs.noteGuts') }
   }
   if (ab === 'hustle') {
-    return { atk: atk * 1.5, note: 'Brío: ATK ×1.5 (precisión moves físicos ×0.8)' }
+    return { atk: atk * 1.5, note: t('vs.noteHustle') }
   }
 
   return { atk, note: null }
@@ -280,12 +284,13 @@ function getDefenderDefMod(
 ): { def: number; note: string | null } {
   if (category !== 'physical') return { def, note: null }
   const ab = normAb(defenderAbility)
+  const t = i18n.t.bind(i18n)
 
   if (ab === 'furcoat') {
-    return { def: def * 2, note: 'Pelo Suave: DEF ×2 vs moves físicos' }
+    return { def: def * 2, note: t('vs.noteFurCoat') }
   }
   if (ab === 'marvelscale' && hasStatus(defenderStatus)) {
-    return { def: def * 1.5, note: 'Escama Especial: estado → DEF ×1.5' }
+    return { def: def * 1.5, note: t('vs.noteMarvelScale') }
   }
 
   return { def, note: null }
@@ -310,25 +315,25 @@ function getAbilityDamageMult(
   let mult = 1
   const notes: string[] = []
   const defAb = normAb(defenderAbility)
+  const t = i18n.t.bind(i18n)
 
   if ((moveType === 'fire' || moveType === 'ice') && defAb === 'thickfat') {
     mult *= 0.5
-    notes.push('Piel Gruesa: move Fuego/Hielo ×0.5')
+    notes.push(t('vs.noteThickFat'))
   }
   if (effectiveness >= 2 && (defAb === 'filter' || defAb === 'solidrock' || defAb === 'prismarmor')) {
     mult *= 0.75
-    notes.push('Filtro: move súper eficaz ×0.75')
+    notes.push(t('vs.noteFilter'))
   }
   if (defAb === 'wonderguard' && effectiveness < 2) {
-    return { mult: 0, notes: ['Maravilla: solo daña moves súper eficaces'], wonderGuardBlock: true }
+    return { mult: 0, notes: [t('vs.noteWonderGuard')], wonderGuardBlock: true }
   }
   if (defAb === 'multiscale' && defenderIsFullHP) {
     mult *= 0.5
-    notes.push('Multiscama: daño ×0.5 con PS completos')
+    notes.push(t('vs.noteMultiscale'))
   }
-  // Intimidate: aviso informativo (el -1 ATK ya está en los stats del atacante)
   if (moveCategory === 'physical' && defAb === 'intimidate') {
-    notes.push('Intimidación activa: comprueba que el -1 ATK está aplicado en los boosts')
+    notes.push(t('vs.noteIntimidate'))
   }
 
   return { mult, notes, wonderGuardBlock: false }
@@ -345,9 +350,10 @@ function getFairyAuraMultiplier(
   const hasFairyAura = normAb(attackerAbility) === 'fairyaura' || normAb(defenderAbility) === 'fairyaura'
   if (!hasFairyAura) return { mult: 1, note: null }
   const hasAuraBreak = normAb(attackerAbility) === 'aurabreak' || normAb(defenderAbility) === 'aurabreak'
+  const t = i18n.t.bind(i18n)
   return hasAuraBreak
-    ? { mult: 3 / 4, note: 'Aura Feérica invertida por Rompeaura: moves Hada ×0.75' }
-    : { mult: 4 / 3, note: 'Aura Feérica: moves Hada ×1.33 para ambos' }
+    ? { mult: 3 / 4, note: t('vs.noteFairyAuraBreak') }
+    : { mult: 4 / 3, note: t('vs.noteFairyAura') }
 }
 
 // ── PARTE 7: Mega Sol ──────────────────────────────────────────────────────────
@@ -359,8 +365,9 @@ function getMegaSolMult(
 ): { mult: number; note: string | null } {
   if (normAb(attackerAbility) !== 'megasol') return { mult: 1, note: null }
   if (weather === 'sun') return { mult: 1, note: null }
-  if (moveType === 'fire')  return { mult: 1.5, note: 'Mega Sol: move Fuego ×1.5' }
-  if (moveType === 'water') return { mult: 0.5, note: 'Mega Sol: move Agua ×0.5' }
+  const t = i18n.t.bind(i18n)
+  if (moveType === 'fire')  return { mult: 1.5, note: t('vs.noteMegaSolFire') }
+  if (moveType === 'water') return { mult: 0.5, note: t('vs.noteMegaSolWater') }
   return { mult: 1, note: null }
 }
 
@@ -422,7 +429,7 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
   const techPower = (normAb(attackerAbility) === 'technician' && movePower <= 60)
     ? Math.floor(movePower * 1.5)
     : movePower
-  if (techPower !== movePower) notes.push('Technician: potencia base ≤60 → ×1.5')
+  if (techPower !== movePower) notes.push(t('vs.noteTechnician'))
 
   // ── 3. Potencia efectiva (tipo transform + habilidades de potencia) ────────
   const typeAdjustedPower = Math.floor(techPower * typeTransform.powerMult)
@@ -583,10 +590,17 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
 }
 
 function formatResult(min: number, max: number, hp: number, eff: number): string {
+  const t = i18n.t.bind(i18n)
   const minPct = Math.round((min / hp) * 1000) / 10
   const maxPct = Math.round((max / hp) * 1000) / 10
-  const effStr = eff === 0 ? ' (no afecta)' : eff > 1 ? ' (súper eficaz)' : eff < 1 ? ' (poco eficaz)' : ''
-  if (min >= hp) return `¡KO seguro! ${minPct}–${maxPct}%${effStr}`
-  if (max >= hp) return `Posible KO (${minPct}–${maxPct}%)${effStr}`
+  const effStr = eff === 0
+    ? ` (${t('vs.noEffect')})`
+    : eff > 1
+      ? ` (${t('vs.superEffective')})`
+      : eff < 1
+        ? ` (${t('vs.notVeryEffective')})`
+        : ''
+  if (min >= hp) return `${t('vs.guaranteedKO')} ${minPct}–${maxPct}%${effStr}`
+  if (max >= hp) return `${t('vs.possibleKO')} (${minPct}–${maxPct}%)${effStr}`
   return `${minPct}–${maxPct}%${effStr}`
 }
