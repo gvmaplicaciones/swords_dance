@@ -17,6 +17,8 @@ export default function App() {
       <div className="w-full max-w-[430px] h-full overflow-hidden relative">
         <Routes>
           <Route path="/"         element={<HomeScreen />} />
+          <Route path="/en/*"     element={<HomeScreen />} />
+          <Route path="/ja/*"     element={<HomeScreen />} />
           <Route path="/premium"  element={<PremiumScreen />} />
           <Route path="/battle"   element={<BattleScreen />} />
           <Route path="/vs"       element={<VSScreen />} />

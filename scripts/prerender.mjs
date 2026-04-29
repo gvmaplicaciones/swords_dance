@@ -40,34 +40,34 @@ function patch(html, meta, appHtml) {
 
 const META = {
   es: {
-    lang: 'es',
-    title: 'SwordsDance — Asistente de Batalla Pokémon Champions',
-    description: 'Escanea el equipo rival, calcula el daño y gana en Pokémon Champions. Sets competitivos integrados, Megas Z-A y calculadora con rango mínimo-máximo.',
-    canonical: 'https://swordsdance.app/',
-    ogTitle: 'SwordsDance — Asistente de Batalla Pokémon',
-    ogDescription: 'Escanea el equipo rival y calcula el daño al instante. PWA gratuita para Pokémon Champions.',
-    twitterTitle: 'SwordsDance — Asistente de Batalla Pokémon',
-    twitterDescription: 'Escanea el equipo rival y calcula el daño al instante. PWA gratuita para Pokémon Champions.',
+    lang:               'es',
+    title:              'SwordsDance — Calculadora de daño para Pokémon Champions',
+    description:        'Calcula el daño exacto en Pokémon Champions. Escanea al rival, compara matchups y usa sets Smogon con Megas de Legends Z-A. Gratis, sin registro.',
+    canonical:          'https://swordsdance.app/',
+    ogTitle:            'SwordsDance — Calculadora de daño para Pokémon Champions',
+    ogDescription:      'Daño exacto, matchups y sets Smogon para Pokémon Champions. Megas de Legends Z-A incluidas. Gratis.',
+    twitterTitle:       'SwordsDance — Calculadora Pokémon Champions',
+    twitterDescription: 'Daño exacto en segundos. Escanea al rival, usa sets competitivos y gana en Pokémon Champions. Gratis.',
   },
   en: {
-    lang: 'en',
-    title: 'SwordsDance — Pokémon Champions Battle Assistant',
-    description: 'Scan your rival\'s team, calculate damage and win in Pokémon Champions. Competitive sets, Z-A Megas and min–max damage calculator.',
-    canonical: 'https://swordsdance.app/en/',
-    ogTitle: 'SwordsDance — Pokémon Champions Battle Assistant',
-    ogDescription: 'Scan your rival\'s team and calculate damage instantly. Free PWA for Pokémon Champions.',
-    twitterTitle: 'SwordsDance — Pokémon Champions Battle Assistant',
-    twitterDescription: 'Scan your rival\'s team and calculate damage instantly. Free PWA for Pokémon Champions.',
+    lang:               'en',
+    title:              'SwordsDance — Damage Calculator for Pokémon Champions',
+    description:        'Calculate exact damage in Pokémon Champions. Pick your Pokémon, choose a move and get the min–max range instantly. Smogon sets and Z-A Mega evolutions included. Free.',
+    canonical:          'https://swordsdance.app/en/',
+    ogTitle:            'SwordsDance — Damage Calculator for Pokémon Champions',
+    ogDescription:      'Pokémon Champions damage calc with Smogon sets and Legends: Z-A Megas. Scan teams, check matchups. Free.',
+    twitterTitle:       'SwordsDance — Pokémon Champions Damage Calc',
+    twitterDescription: 'Instant damage calc for Pokémon Champions. Built-in Smogon sets, Z-A Megas, and team scanner. Free.',
   },
   ja: {
-    lang: 'ja',
-    title: 'SwordsDance — ポケモンチャンピオンズ バトルアシスタント',
-    description: 'ライバルのチームをスキャンし、ダメージを計算してポケモンチャンピオンズで勝利しよう。競技セット搭載、Z-Aメガ進化、最小最大ダメージ計算機。',
-    canonical: 'https://swordsdance.app/ja/',
-    ogTitle: 'SwordsDance — ポケモンチャンピオンズ バトルアシスタント',
-    ogDescription: 'ライバルのチームをスキャンして、ダメージを瞬時に計算。ポケモンチャンピオンズ向け無料PWA。',
-    twitterTitle: 'SwordsDance — ポケモンチャンピオンズ バトルアシスタント',
-    twitterDescription: 'ライバルのチームをスキャンして、ダメージを瞬時に計算。ポケモンチャンピオンズ向け無料PWA。',
+    lang:               'ja',
+    title:              'SwordsDance — ポケモンチャンピオンズ ダメージ計算機',
+    description:        'ポケモンチャンピオンズのダメージを瞬時に計算。ポケモンとわざを選ぶだけで最小・最大ダメージを表示。Smogon育成論・レジェンズZ-Aメガ進化対応。無料。',
+    canonical:          'https://swordsdance.app/ja/',
+    ogTitle:            'SwordsDance — ポケモンチャンピオンズ ダメージ計算機',
+    ogDescription:      'ポケモンチャンピオンズ対応のダメージ計算機。育成論・Z-Aメガ進化搭載。無料。',
+    twitterTitle:       'SwordsDance — ポケモンチャンピオンズ 計算機',
+    twitterDescription: 'ポケモンチャンピオンズのダメージを瞬時に計算。育成論・メガ進化対応。無料。',
   },
 }
 
@@ -78,12 +78,12 @@ async function generate(url, lang, outPath) {
   console.log(`✓ prerender ${url} → ${outPath.replace(root, '')}`)
 }
 
-await generate('/',     'es', resolve(root, 'dist/index.html'))
+await generate('/',    'es', resolve(root, 'dist/index.html'))
 
 mkdirSync(resolve(root, 'dist/en'), { recursive: true })
-await generate('/en/',  'en', resolve(root, 'dist/en/index.html'))
+await generate('/en/', 'en', resolve(root, 'dist/en/index.html'))
 
 mkdirSync(resolve(root, 'dist/ja'), { recursive: true })
-await generate('/ja/',  'ja', resolve(root, 'dist/ja/index.html'))
+await generate('/ja/', 'ja', resolve(root, 'dist/ja/index.html'))
 
 console.log('✓ prerender completo')

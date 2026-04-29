@@ -3,20 +3,23 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import basicSsl from '@vitejs/plugin-basic-ssl'
 
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
+  build: {
+    emptyOutDir: !isSsrBuild,
+  },
   plugins: [
-    basicSsl(),
+    !isSsrBuild && basicSsl(),
     react(),
-    VitePWA({
+    !isSsrBuild && VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'swordsdance-logo.png'],
       workbox: {
-        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024, // 4 MiB
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },
       manifest: {
         name: 'SwordsDance',
         short_name: 'SwordsDance',
-        description: 'Asistente de batalla para Pokémon Champions',
+        description: 'Calculadora de daño para Pokémon Champions',
         theme_color: '#0a1628',
         background_color: '#0a1628',
         display: 'standalone',
@@ -27,5 +30,5 @@ export default defineConfig({
         ],
       },
     }),
-  ],
-})
+  ].filter(Boolean),
+}))

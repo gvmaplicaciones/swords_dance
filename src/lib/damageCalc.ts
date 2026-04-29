@@ -6,6 +6,7 @@ import type { EffectiveStats } from './statCalc'
 import type { Weather, Terrain } from './battleState'
 import { calculate, Generations, Pokemon as SmogonPokemon, Move as SmogonMove } from '@smogon/calc'
 import type { TypeName } from '@smogon/calc/dist/data/interface'
+import i18n from '../i18n/i18n'
 
 const gen9 = Generations.get(9)
 
@@ -514,22 +515,23 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
 
   // ── 7. Rango de daño: aplicar STAB, tipo, clima, terreno y habilidades ────
   // Notas de campo de batalla
+  const t = i18n.t.bind(i18n)
   if (attackerSideHelpingHand && isDoubles)
-    notes.push('Refuerzo: daño ×1.5')
+    notes.push(t('vs.noteHelpingHand'))
   if (attackerSideBattery && isDoubles && moveCategory === 'special')
-    notes.push('Batería: SpA ×1.3')
+    notes.push(t('vs.noteBattery'))
   if (attackerSidePowerSpot && isDoubles)
-    notes.push('Fuente Energía: daño ×1.3')
+    notes.push(t('vs.notePowerSpot'))
   if (attackerSideSteelySpirit && isDoubles && effectiveMoveType === 'steel')
-    notes.push('Alma Acerada: move Acero ×1.5')
+    notes.push(t('vs.noteSteelSpirit'))
   if (defenderSideReflect && moveCategory === 'physical')
-    notes.push(`Reflejo: daño físico ×${isDoubles ? '0.67' : '0.5'}`)
+    notes.push(t('vs.noteReflect', { mult: isDoubles ? '0.67' : '0.5' }))
   if (defenderSideLightScreen && moveCategory === 'special')
-    notes.push(`Pantalla Luz: daño especial ×${isDoubles ? '0.67' : '0.5'}`)
+    notes.push(t('vs.noteLightScreen', { mult: isDoubles ? '0.67' : '0.5' }))
   if (defenderSideAuroraVeil)
-    notes.push(`Velo Aurora: daño ×${isDoubles ? '0.67' : '0.5'}`)
+    notes.push(t('vs.noteAuroraVeil', { mult: isDoubles ? '0.67' : '0.5' }))
   if (defenderSideFriendGuard && isDoubles)
-    notes.push('Vastaguardia: daño ×0.75')
+    notes.push(t('vs.noteFriendGuard'))
 
   const results: number[] = abilityDmg.wonderGuardBlock
     ? Array(16).fill(0)

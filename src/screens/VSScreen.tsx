@@ -599,7 +599,14 @@ export default function VSScreen() {
     return getMegaForm(myPokemon, mySlot.itemSlug, ALL_POKEMON_DATA)
   }, [myPokemon, mySlot?.itemSlug, myBattle.activeForm])
 
-  const rivalMegaForm = rivalPokemon && rivalSet?.itemSlug ? getMegaForm(rivalPokemon, rivalSet.itemSlug, ALL_POKEMON_DATA) : null
+  const rivalMegaForm = useMemo(() => {
+    if (!rivalPokemon || !rivalSet?.itemSlug) return null
+    if (rivalSet.itemSlug === MEGA_EVOLUCION_SLUG && (rivalBattle.activeForm === 'mega-x' || rivalBattle.activeForm === 'mega-y')) {
+      return getMegaForms(rivalPokemon, ALL_POKEMON_DATA).find(f => f.key === rivalBattle.activeForm)?.form
+        ?? getMegaForm(rivalPokemon, rivalSet.itemSlug, ALL_POKEMON_DATA)
+    }
+    return getMegaForm(rivalPokemon, rivalSet.itemSlug, ALL_POKEMON_DATA)
+  }, [rivalPokemon, rivalSet?.itemSlug, rivalBattle.activeForm])
   const myIsMega    = myBattle.activeForm !== 'normal'    && myMegaForm    !== null
   const rivalIsMega = rivalBattle.activeForm !== 'normal' && rivalMegaForm !== null
   const myIsZA    = myIsMega    && isZAMegaStone(mySlot?.itemSlug    ?? '')
@@ -775,7 +782,7 @@ export default function VSScreen() {
     if (myAttackResult && selectedMyMove) {
       const isKO = myAttackResult.min >= (rivalEffective?.hp ?? Infinity)
       const isPossKO = !isKO && myAttackResult.max >= (rivalEffective?.hp ?? Infinity)
-      const verdict = isKO ? 'MATA' : isPossKO ? 'DEPENDE' : 'NO MATA'
+      const verdict = isKO ? 'KO' : isPossKO ? 'MAYBE' : 'SURVIVE'
       analytics.damageCalculated(selectedMyMove, verdict, Math.round(myAttackResult.minPercent), Math.round(myAttackResult.maxPercent))
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps

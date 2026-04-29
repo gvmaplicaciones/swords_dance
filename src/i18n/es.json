@@ -157,7 +157,15 @@
     "burnNote": "⚠ ATK ×0.5",
     "paraNote": "⚠ VEL ×0.5",
     "usagePct": "% uso",
-    "sp": "SP"
+    "sp": "SP",
+    "noteHelpingHand": "Refuerzo: daño ×1.5",
+    "noteBattery": "Batería: SpA ×1.3",
+    "notePowerSpot": "Fuente Energía: daño ×1.3",
+    "noteSteelSpirit": "Alma Acerada: Acero ×1.5",
+    "noteReflect": "Reflejo: físico ×{{mult}}",
+    "noteLightScreen": "Pantalla Luz: especial ×{{mult}}",
+    "noteAuroraVeil": "Velo Aurora: daño ×{{mult}}",
+    "noteFriendGuard": "Vastaguardia: daño ×0.75"
   },
   "oneVsOne": {
     "title": "1 VS 1",
