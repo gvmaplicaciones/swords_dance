@@ -625,6 +625,10 @@ export default function VSScreen() {
   const myIsZA    = myIsMega    && isZAMegaStone(mySlot?.itemSlug    ?? '')
   const rivalIsZA = rivalIsMega && isZAMegaStone(rivalSet?.itemSlug  ?? '')
 
+  // When mega is active, use the mega form's ability for all damage calculations
+  const myActiveAbility    = (myIsMega    && myMegaForm?.abilities?.[0]?.name)    || mySlot?.ability
+  const rivalActiveAbility = (rivalIsMega && rivalMegaForm?.abilities?.[0]?.name) || rivalSet?.ability
+
   const myActiveSprite    = myIsMega    ? myMegaForm!.sprites.normal    : myPokemon?.sprites.normal
   const rivalActiveSprite = rivalIsMega ? rivalMegaForm!.sprites.normal : rivalPokemon?.sprites.normal
   const myBaseFallback    = myPokemon?.sprites.normal    ?? null
@@ -658,8 +662,8 @@ export default function VSScreen() {
     const weather = fieldState.weather
     function nb(ab?: string) { return ab?.toLowerCase().replace(/[\s\-_]/g, '') ?? '' }
 
-    const myAb  = nb(mySlot?.ability)
-    const rivAb = nb(rivalSet?.ability)
+    const myAb  = nb(myActiveAbility)
+    const rivAb = nb(rivalActiveAbility)
 
     if (myAb === 'speedboost')  notes.push({ side: 'my', key: 'speedboost_my' })
     if (myAb === 'chlorophyll' && weather === 'sun')  notes.push({ side: 'my', key: 'chlorophyll_my' })
@@ -684,7 +688,7 @@ export default function VSScreen() {
     }
 
     return notes
-  }, [mySlot?.ability, rivalSet?.ability, fieldState.weather, myEffective, rivalEffective])
+  }, [myActiveAbility, rivalActiveAbility, fieldState.weather, myEffective, rivalEffective])
 
   const myAttackResult = useMemo(() => {
     if (!myEffective || !rivalEffective || !myPokemon || !rivalPokemon || !selectedMyMove) return null
@@ -697,8 +701,8 @@ export default function VSScreen() {
       movePower: moveData.power, moveType: moveData.type,
       moveCategory: moveData.category,
       weather: fieldState.weather as Weather, terrain: fieldState.terrain as Terrain,
-      attackerAbility: mySlot?.ability,
-      defenderAbility: rivalSet?.ability,
+      attackerAbility: myActiveAbility,
+      defenderAbility: rivalActiveAbility,
       moveName: moveData.nameApi,
       defenderIsFullHP: true,
       isDoubles: doubles,
@@ -711,7 +715,7 @@ export default function VSScreen() {
       defenderSideAuroraVeil:   fieldState.rivalSide.isAuroraVeil,
       defenderSideFriendGuard:  doubles && fieldState.rivalSide.isFriendGuard,
     })
-  }, [myEffective, rivalEffective, myPokemon, rivalPokemon, selectedMyMove, myBattle, myActiveTypes, rivalActiveTypes, mySlot?.ability, rivalSet?.ability, fieldState])
+  }, [myEffective, rivalEffective, myPokemon, rivalPokemon, selectedMyMove, myBattle, myActiveTypes, rivalActiveTypes, myActiveAbility, rivalActiveAbility, fieldState])
 
   const rivalAttackResult = useMemo(() => {
     if (!myEffective || !rivalEffective || !myPokemon || !rivalPokemon || !selectedRivMove) return null
@@ -724,8 +728,8 @@ export default function VSScreen() {
       movePower: moveData.power, moveType: moveData.type,
       moveCategory: moveData.category,
       weather: fieldState.weather as Weather, terrain: fieldState.terrain as Terrain,
-      attackerAbility: rivalSet?.ability,
-      defenderAbility: mySlot?.ability,
+      attackerAbility: rivalActiveAbility,
+      defenderAbility: myActiveAbility,
       moveName: moveData.nameApi,
       defenderIsFullHP: true,
       isDoubles: doubles,
@@ -738,7 +742,7 @@ export default function VSScreen() {
       defenderSideAuroraVeil:   fieldState.mySide.isAuroraVeil,
       defenderSideFriendGuard:  false,
     })
-  }, [myEffective, rivalEffective, myPokemon, rivalPokemon, selectedRivMove, myBattle, myActiveTypes, rivalActiveTypes, mySlot?.ability, rivalSet?.ability, fieldState])
+  }, [myEffective, rivalEffective, myPokemon, rivalPokemon, selectedRivMove, myBattle, myActiveTypes, rivalActiveTypes, myActiveAbility, rivalActiveAbility, fieldState])
 
   function patchMyBattle(patch: Partial<PokemonBattleState>) {
     updateMyBattleState(myIdx, { ...myBattle, ...patch })

@@ -366,8 +366,8 @@ function getMegaSolMult(
   if (normAb(attackerAbility) !== 'megasol') return { mult: 1, note: null }
   if (weather === 'sun') return { mult: 1, note: null }
   const t = i18n.t.bind(i18n)
-  if (moveType === 'fire')  return { mult: 1.5, note: t('vs.noteMegaSolFire') }
-  if (moveType === 'water') return { mult: 0.5, note: t('vs.noteMegaSolWater') }
+  if (moveType === 'fire')  return { mult: 1, note: t('vs.noteMegaSolFire') }
+  if (moveType === 'water') return { mult: 1, note: t('vs.noteMegaSolWater') }
   return { mult: 1, note: null }
 }
 
@@ -421,9 +421,12 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
   const notes: string[] = []
   const t = i18n.t.bind(i18n)
 
+  // Mega Sol acts as permanent sun for all weather-dependent calculations
+  const effectiveWeather: Weather = normAb(attackerAbility) === 'megasol' ? 'sun' : weather
+
   // ── 1. Transformar tipo del move por habilidad ─────────────────────────────
   const typeTransform     = applyTypeTransform(moveType.toLowerCase(), moveName.toLowerCase(), attackerAbility)
-  const effectiveMoveType = typeTransform.type
+  let effectiveMoveType = typeTransform.type
   if (typeTransform.note) notes.push(typeTransform.note)
 
   // ── 2. Technician: potencia base ≤60 → ×1.5 ──────────────────────────────
@@ -436,7 +439,15 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
   const typeAdjustedPower = Math.floor(techPower * typeTransform.powerMult)
   const powerAbility      = getPowerAbilityMult(moveName.toLowerCase(), moveIsContact, moveHasSecondaryEffect, attackerAbility)
   notes.push(...powerAbility.notes)
-  const effectivePower    = Math.floor(typeAdjustedPower * powerAbility.mult)
+  let effectivePower    = Math.floor(typeAdjustedPower * powerAbility.mult)
+
+  // ── Weather Ball: changes type and doubles power based on weather ──────────
+  if (moveName.toLowerCase() === 'weather-ball' && effectiveWeather !== 'none') {
+    if (effectiveWeather === 'sun')  { effectiveMoveType = 'fire';  effectivePower = 100 }
+    else if (effectiveWeather === 'rain') { effectiveMoveType = 'water'; effectivePower = 100 }
+    else if (effectiveWeather === 'sand') { effectiveMoveType = 'rock';  effectivePower = 100 }
+    else if (effectiveWeather === 'snow' || effectiveWeather === 'hail') { effectiveMoveType = 'ice'; effectivePower = 100 }
+  }
 
   // ── 4. Stats base con modificadores de habilidad ──────────────────────────
   const rawAtk = moveCategory === 'physical' ? attackerStats.atk   : attackerStats.spAtk
@@ -459,7 +470,7 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
   if (fairyAura.note) notes.push(fairyAura.note)
 
   const critMult    = isCritical ? 1.5 : 1
-  const weatherMult = getWeatherMultiplier(effectiveMoveType, weather)
+  const weatherMult = getWeatherMultiplier(effectiveMoveType, effectiveWeather)
   const terrainMult = getTerrainMultiplier(effectiveMoveType, terrain, attackerTypes.map(type => type.toLowerCase()))
   const megaSol     = getMegaSolMult(effectiveMoveType, weather, attackerAbility)
   if (megaSol.note) notes.push(megaSol.note)
