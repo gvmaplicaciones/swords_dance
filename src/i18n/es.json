@@ -185,7 +185,8 @@
     "noteReflect": "Pantalla de Luz: físico ×{{mult}}",
     "noteLightScreen": "Velo Aurora: especial ×{{mult}}",
     "noteAuroraVeil": "Velo Aurora: daño ×{{mult}}",
-    "noteFriendGuard": "Amigo Guardián: daño ×0.75"
+    "noteFriendGuard": "Amigo Guardián: daño ×0.75",
+    "noteTypeBoostItem": "Objeto: tipo del move x1.2"
   },
   "oneVsOne": {
     "title": "1 VS 1",

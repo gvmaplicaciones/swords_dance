@@ -117,6 +117,8 @@ export interface DamageCalcInput {
   defenderSideLightScreen?:  boolean
   defenderSideAuroraVeil?:   boolean
   defenderSideFriendGuard?:  boolean
+  // Objeto del atacante (slug API, ej. 'mystic-water')
+  attackerItem?: string
 }
 
 export interface DamageResult {
@@ -138,6 +140,33 @@ function normAb(ab: string | undefined): string {
 
 function hasStatus(status: string | undefined): boolean {
   return !!status && status !== 'none'
+}
+
+// ── Objetos que potencian un tipo específico (+20%) ────────────────────────────
+const TYPE_BOOST_ITEMS: Record<string, string> = {
+  'mystic-water':   'water',
+  'sea-incense':    'water',
+  'wave-incense':   'water',
+  'charcoal':       'fire',
+  'magnet':         'electric',
+  'miracle-seed':   'grass',
+  'rose-incense':   'grass',
+  'hard-stone':     'rock',
+  'silver-powder':  'bug',
+  'twisted-spoon':  'psychic',
+  'odd-incense':    'psychic',
+  'black-glasses':  'dark',
+  'silk-scarf':     'normal',
+  'dragon-fang':    'dragon',
+  'poison-barb':    'poison',
+  'sharp-beak':     'flying',
+  'fairy-feather':  'fairy',
+  'metal-coat':     'steel',
+  'spell-tag':      'ghost',
+  'black-belt':     'fighting',
+  'soft-sand':      'ground',
+  'never-melt-ice': 'ice',
+  'rock-incense':   'rock',
 }
 
 // ── PARTE 1: Habilidades que transforman el tipo del move ──────────────────────
@@ -416,6 +445,7 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
     defenderSideLightScreen  = false,
     defenderSideAuroraVeil   = false,
     defenderSideFriendGuard  = false,
+    attackerItem,
   } = input
 
   const notes: string[] = []
@@ -447,6 +477,13 @@ export function calcDamage(input: DamageCalcInput): DamageResult {
     else if (effectiveWeather === 'rain') { effectiveMoveType = 'water'; effectivePower = 100 }
     else if (effectiveWeather === 'sand') { effectiveMoveType = 'rock';  effectivePower = 100 }
     else if (effectiveWeather === 'snow' || effectiveWeather === 'hail') { effectiveMoveType = 'ice'; effectivePower = 100 }
+  }
+
+  // ── Type-boosting item: ×1.2 when item boosts the move's type ─────────────
+  const itemBoostedType = attackerItem ? TYPE_BOOST_ITEMS[attackerItem] : undefined
+  if (itemBoostedType && itemBoostedType === effectiveMoveType) {
+    effectivePower = Math.floor(effectivePower * 1.2)
+    notes.push(t('vs.noteTypeBoostItem'))
   }
 
   // ── 4. Stats base con modificadores de habilidad ──────────────────────────

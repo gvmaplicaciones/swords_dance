@@ -185,7 +185,8 @@
     "noteReflect": "Reflect: physical ×{{mult}}",
     "noteLightScreen": "Light Screen: special ×{{mult}}",
     "noteAuroraVeil": "Aurora Veil: dmg ×{{mult}}",
-    "noteFriendGuard": "Friend Guard: dmg ×0.75"
+    "noteFriendGuard": "Friend Guard: dmg ×0.75",
+    "noteTypeBoostItem": "Item: x1.2 to move type"
   },
   "oneVsOne": {
     "title": "1 VS 1",

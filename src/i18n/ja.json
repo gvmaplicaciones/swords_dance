@@ -185,7 +185,8 @@
     "noteReflect": "リフレクター: ぶつり ×{{mult}}",
     "noteLightScreen": "ひかりのかべ: とくしゅ ×{{mult}}",
     "noteAuroraVeil": "オーロラベール: ダメージ ×{{mult}}",
-    "noteFriendGuard": "フレンドガード: ダメージ ×0.75"
+    "noteFriendGuard": "フレンドガード: ダメージ ×0.75",
+    "noteTypeBoostItem": "どうぐ: 技のタイプx1.2"
   },
   "oneVsOne": {
     "title": "1 VS 1",
